@@ -7,6 +7,12 @@ function Error404() {
       <div className="Error404-container">
         <div className="Error-car">
           <img src={Car}></img>
+          <div className="loader1">
+            <div className="loader"></div>
+          </div>
+          <div className="loader2">
+            <div className="loader"></div>
+          </div>
         </div>
         <div className="Error-text">
           <p>Ooops !</p>
