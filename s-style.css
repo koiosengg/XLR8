@@ -173,3 +173,38 @@ font-style: normal;
 font-weight: 700;
 line-height: 20px;
 }
+
+
+.Error-car {
+  position: relative;
+}
+
+.loader1 {
+  position: absolute;
+  bottom: 29px;
+  left: calc(50% - 235px);
+}
+
+.loader2{
+    position: absolute;
+  bottom: 30px;
+  left: calc(50% + 83px);
+}
+
+
+.loader {
+  width: 102px;
+  padding: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+   background: conic-gradient(#36A7BE,#263238);
+  --_m: 
+    conic-gradient(#36A7BE,#263238),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
