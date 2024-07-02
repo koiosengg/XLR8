@@ -1,17 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Products from "./components/Products";
 import Error404 from "./components/Error404";
-import Contact from "./components/Contact"
+import Contact from "./components/Contact";
 
 function App() {
-
   return (
     <div>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
