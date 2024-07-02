@@ -75,9 +75,133 @@
   border-radius: 8px;
   background: var(--text-cod-gray-100, #e7e7e7);
   cursor: pointer;
+  position: relative;
+  width: 127px;
 }
 
+.navbar-contact-button:hover .borderColorRotate {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 127px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #36a7be 0%, #111111 50%);
+  --_w: conic-gradient(#36a7be 0%, #111111 50%), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_w);
+  mask: var(--_w);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  padding: 1px;
+  animation: borderColorRotate 1.5s ease infinite;
+}
+
+@keyframes borderColorRotate {
+  0% {
+    background: linear-gradient(0deg, #36a7be 0%, #111111 50%);
+  }
+  3.125% {
+    background: linear-gradient(11.25deg, #36a7be 0%, #111111 50%);
+  }
+  6.25% {
+    background: linear-gradient(22.5deg, #36a7be 0%, #111111 50%);
+  }
+  9.375% {
+    background: linear-gradient(33.75deg, #36a7be 0%, #111111 50%);
+  }
+  12.5% {
+    background: linear-gradient(45deg, #36a7be 0%, #111111 50%);
+  }
+  15.625% {
+    background: linear-gradient(56.25deg, #36a7be 0%, #111111 50%);
+  }
+  18.75% {
+    background: linear-gradient(67.5deg, #36a7be 0%, #111111 50%);
+  }
+  21.875% {
+    background: linear-gradient(78.75deg, #36a7be 0%, #111111 50%);
+  }
+  25% {
+    background: linear-gradient(90deg, #36a7be 0%, #111111 50%);
+  }
+  28.125% {
+    background: linear-gradient(101.25deg, #36a7be 0%, #111111 50%);
+  }
+  31.25% {
+    background: linear-gradient(112.5deg, #36a7be 0%, #111111 50%);
+  }
+  34.375% {
+    background: linear-gradient(123.75deg, #36a7be 0%, #111111 50%);
+  }
+  37.5% {
+    background: linear-gradient(135deg, #36a7be 0%, #111111 50%);
+  }
+  40.625% {
+    background: linear-gradient(146.25deg, #36a7be 0%, #111111 50%);
+  }
+  43.75% {
+    background: linear-gradient(157.5deg, #36a7be 0%, #111111 50%);
+  }
+  46.875% {
+    background: linear-gradient(168.75deg, #36a7be 0%, #111111 50%);
+  }
+  50% {
+    background: linear-gradient(180deg, #36a7be 0%, #111111 50%);
+  }
+  53.125% {
+    background: linear-gradient(191.25deg, #36a7be 0%, #111111 50%);
+  }
+  56.25% {
+    background: linear-gradient(202.5deg, #36a7be 0%, #111111 50%);
+  }
+  59.375% {
+    background: linear-gradient(213.75deg, #36a7be 0%, #111111 50%);
+  }
+  62.5% {
+    background: linear-gradient(225deg, #36a7be 0%, #111111 50%);
+  }
+  65.625% {
+    background: linear-gradient(236.25deg, #36a7be 0%, #111111 50%);
+  }
+  68.75% {
+    background: linear-gradient(247.5deg, #36a7be 0%, #111111 50%);
+  }
+  71.875% {
+    background: linear-gradient(258.75deg, #36a7be 0%, #111111 50%);
+  }
+  75% {
+    background: linear-gradient(270deg, #36a7be 0%, #111111 50%);
+  }
+  78.125% {
+    background: linear-gradient(281.25deg, #36a7be 0%, #111111 50%);
+  }
+  81.25% {
+    background: linear-gradient(292.5deg, #36a7be 0%, #111111 50%);
+  }
+  84.375% {
+    background: linear-gradient(303.75deg, #36a7be 0%, #111111 50%);
+  }
+  87.5% {
+    background: linear-gradient(315deg, #36a7be 0%, #111111 50%);
+  }
+  90.625% {
+    background: linear-gradient(326.25deg, #36a7be 0%, #111111 50%);
+  }
+  93.75% {
+    background: linear-gradient(337.5deg, #36a7be 0%, #111111 50%);
+  }
+  96.875% {
+    background: linear-gradient(348.75deg, #36a7be 0%, #111111 50%);
+  }
+  100% {
+    background: linear-gradient(360deg, #36a7be 0%, #111111 50%);
+  }
+}
+
+
+
 .navbarLinkText {
+  z-index: 1;
+    width: 127px;
   padding: 12px 24px;
   color: var(--text-cod-gray-900, #3d3d3d);
   font-family: "Merriweather Sans";
@@ -86,6 +210,7 @@
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 .navbar-contact-button:hover {

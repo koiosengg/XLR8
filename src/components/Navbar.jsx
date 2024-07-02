@@ -27,6 +27,7 @@ function Navbar() {
             <Link to="/contact" className="navbarLinkText">
               Contact us
             </Link>
+            <div className="borderColorRotate"></div>
           </div>
         </div>
       </div>
