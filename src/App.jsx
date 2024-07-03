@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import Error404 from "./components/Error404";
 import Contact from "./components/Contact";
+import MainFooter from "./components/MainFooter";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="*" element={<Error404 />} />
           </Route>
         </Routes>
+        <MainFooter/>
       </BrowserRouter>
     </div>
   );
