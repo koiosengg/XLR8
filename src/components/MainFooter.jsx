@@ -4,53 +4,7 @@ import { Link } from "react-router-dom";
 function MainFooter() {
   return (
     <>
-      <div className="footer">
-        <div className="footer-text">
-          <p>
-            Start Racing <span style={{ fontWeight: "700" }}>Today!</span>
-          </p>
-          <span className="footer-text-span">
-            Lorem ipsum dolor sit amet consectetur. Auctor consectetur aliquam
-            sagittis amet amet enim non
-          </span>
-        </div>
-        <div className="footer-button-container">
-          <div className="footer-get-quote">
-            <Link to="/contact" className="footerLinkText">
-              <p style={{ flexShrink: "0" }}>Get Quote</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-              >
-                <path
-                  d="M13.5 17L18.5 12L13.5 7"
-                  stroke="#F6F6F6"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M6.5 17L11.5 12L6.5 7"
-                  stroke="#F6F6F6"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
-            <div className="footerColorRotate"></div>
-          </div>
-          <div className="navbar-contact-button">
-            <Link to="/contact" className="navbarLinkText">
-              Contact us
-            </Link>
-            <div className="borderColorRotate"></div>
-          </div>
-        </div>
-      </div>
+      
       <div className="footerLine"></div>
       <div className="footerEnd">
         <div className="footerEndLeft">
@@ -66,7 +20,7 @@ function MainFooter() {
               cy="29.5"
               r="28"
               stroke="#B0B0B0"
-              stroke-width="3"
+              strokeWidth="3"
             />
             <g opacity="0.8">
               <mask
@@ -117,9 +71,9 @@ function MainFooter() {
                 width="12.4487"
                 height="79.1461"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -175,9 +129,9 @@ function MainFooter() {
                 <path
                   d="M18 2.5H15C13.6739 2.5 12.4021 3.02678 11.4645 3.96447C10.5268 4.90215 10 6.17392 10 7.5V10.5H7V14.5H10V22.5H14V14.5H17L18 10.5H14V7.5C14 7.23478 14.1054 6.98043 14.2929 6.79289C14.4804 6.60536 14.7348 6.5 15 6.5H18V2.5Z"
                   stroke="#D1D1D1"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </a>
@@ -192,23 +146,23 @@ function MainFooter() {
                 <path
                   d="M17 2.5H7C4.23858 2.5 2 4.73858 2 7.5V17.5C2 20.2614 4.23858 22.5 7 22.5H17C19.7614 22.5 22 20.2614 22 17.5V7.5C22 4.73858 19.7614 2.5 17 2.5Z"
                   stroke="#D1D1D1"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M16 11.8701C16.1234 12.7023 15.9812 13.5523 15.5937 14.2991C15.2062 15.0459 14.5931 15.6515 13.8416 16.0297C13.0901 16.408 12.2384 16.5397 11.4077 16.406C10.5771 16.2723 9.80971 15.8801 9.21479 15.2852C8.61987 14.6903 8.22768 13.9229 8.09402 13.0923C7.96035 12.2616 8.09202 11.41 8.47028 10.6584C8.84854 9.90691 9.45414 9.2938 10.2009 8.9063C10.9477 8.5188 11.7977 8.37665 12.63 8.50006C13.4789 8.62594 14.2648 9.02152 14.8716 9.62836C15.4785 10.2352 15.8741 11.0211 16 11.8701Z"
                   stroke="#D1D1D1"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M17.5 7H17.51"
                   stroke="#D1D1D1"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </a>

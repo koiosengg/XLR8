@@ -220,6 +220,130 @@
   color: #fff;
 }
 
+/* Gallery */
+
+.s-gallery {
+  display: flex;
+  width: 100%;
+  padding: 80px 160px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.s-sub-heading {
+  color: #fff;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  padding-bottom: 8px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-bottom: 1px dashed #142d38;
+}
+
+.s-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  color: var(--default-white, #fff);
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+}
+
+.s-heading span {
+  color: var(--default-white, #fff);
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.s-heading-sub-text {
+  width: 418px;
+  color: var(--text-cod-gray-300, #b0b0b0);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.s-galler-container {
+  display: flex;
+  width: 100%;
+  height: 625px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.s-gallery-img-container {
+  display: flex;
+  width: 90%;
+  height: 625px;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 8px;
+  align-self: stretch;
+  overflow: hidden;
+}
+
+.s-gallery-img-container img {
+  width: 100%;
+  height: 625px;
+  object-fit: cover;
+}
+
+.s-gallery-option-container {
+  display: flex;
+  width: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28.517px;
+  align-self: stretch;
+}
+
+.s-gallery-controls{
+  cursor: pointer;
+  width: 28.517px;
+height: 24px;
+}
+
+.s-gallery-option-img-container {
+  display: flex;
+  width: 100%;
+  height: 511px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.s-gallery-option-img-container img {
+  width: 100%;
+  height: 74.054px;
+  object-fit: cover;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--stroke-dark, #142d38);
+}
+
+.s-gallery-not-active-img {
+  filter: blur(2px);
+}
 /* Footer */
 
 .footer {
