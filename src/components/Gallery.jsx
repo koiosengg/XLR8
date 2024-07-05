@@ -1,15 +1,15 @@
 import React, { useState, useRef } from "react";
-import galleryImg1 from "../assets/s-gallery-img-1.png";
-import galleryImg2 from "../assets/s-gallery-img-2.png";
-import galleryImg3 from "../assets/s-gallery-img-3.png";
-import galleryImg4 from "../assets/s-gallery-img-4.png";
-import galleryImg5 from "../assets/s-gallery-img-5.png";
-import galleryImg6 from "../assets/s-gallery-img-6.png";
-import galleryImg7 from "../assets/s-gallery-img-7.png";
-import galleryImg8 from "../assets/s-gallery-img-8.png";
-import galleryImg9 from "../assets/s-gallery-img-9.png";
-import galleryImg10 from "../assets/s-gallery-img-10.png";
-import galleryImg11 from "../assets/s-gallery-img-11.png";
+import galleryImg1 from "../assets/Gallery/s-gallery-img-1.png";
+import galleryImg2 from "../assets/Gallery/s-gallery-img-2.png";
+import galleryImg3 from "../assets/Gallery/s-gallery-img-3.png";
+import galleryImg4 from "../assets/Gallery/s-gallery-img-4.png";
+import galleryImg5 from "../assets/Gallery/s-gallery-img-5.png";
+import galleryImg6 from "../assets/Gallery/s-gallery-img-6.png";
+import galleryImg7 from "../assets/Gallery/s-gallery-img-7.png";
+import galleryImg8 from "../assets/Gallery/s-gallery-img-8.png";
+import galleryImg9 from "../assets/Gallery/s-gallery-img-9.png";
+import galleryImg10 from "../assets/Gallery/s-gallery-img-10.png";
+import galleryImg11 from "../assets/Gallery/s-gallery-img-11.png";
 
 const galleryImages = [
   galleryImg1,
