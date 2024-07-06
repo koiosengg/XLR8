@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
+import OnHoverButton from "./OnHoverButton";
 
 function Navbar() {
   return (
@@ -23,12 +24,7 @@ function Navbar() {
               Our world
             </Link>
           </div>
-          <div className="navbar-contact-button">
-            <Link to="/contact" className="navbarLinkText">
-              Contact us
-            </Link>
-            <div className="borderColorRotate"></div>
-          </div>
+          <OnHoverButton text="Contact us" toLink="/contact" />
         </div>
       </div>
     </div>

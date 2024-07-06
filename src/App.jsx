@@ -22,7 +22,6 @@ function App() {
             <Route path="*" element={<Error404 />} />
           </Route>
         </Routes>
-        <MainFooter />
       </BrowserRouter>
     </div>
   );
