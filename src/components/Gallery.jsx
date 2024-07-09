@@ -57,7 +57,7 @@ function Gallery() {
           Our Gallery
           <br /> <span>of karting experience</span>
         </p>
-        <div className="s-heading-sub-text">
+        <div className="s-heading-sub-text" style={{ width: "418px" }}>
           Lorem ipsum dolor sit amet consectetur. Sed imperdiet ifelis quis
           ultrices lacinia proin pel
         </div>

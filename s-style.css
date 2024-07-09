@@ -272,7 +272,7 @@
 }
 
 .s-heading-sub-text {
-  width: 418px;
+  width: 100%;
   color: var(--text-cod-gray-300, #b0b0b0);
   font-family: "Merriweather Sans";
   font-size: 16px;
@@ -347,6 +347,208 @@
   filter: blur(2px);
 }
 
+/* Products */
+
+.mainProducts {
+  width: 100%;
+  display: flex;
+  padding: 80px 160px;
+  padding-top: 196px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.mainProductsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.mainProductsSet {
+  display: flex;
+  height: 362px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+  border-radius: 4px;
+  border: 1px solid #3d3d3d;
+  box-shadow: -5px 4px 40px 0px rgba(113, 113, 113, 0.15);
+  text-decoration: none;
+}
+
+.mainProductsImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 246px;
+  overflow: hidden;
+}
+
+.mainProductsImg img {
+  width: 100%;
+  height: 246px;
+  object-fit: contain;
+}
+
+.mainProductsText {
+  width: 100%;
+  display: flex;
+  padding: 24px 12px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  color: #fff;
+  font-family: "Merriweather Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.productContainer {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.productBanner {
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.productBanner img {
+  width: 100%;
+  height: 100svh;
+  object-fit: contain;
+}
+
+.productDescription {
+  display: flex;
+  width: 100%;
+  padding: 80px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.productDescriptionContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.productDescriptionSet {
+  display: flex;
+  padding: 0px 40px;
+  padding-right: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.productDescriptionSet span {
+  color: var(--text-cod-gray-300, #b0b0b0);
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.productDescriptionSet p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--White, #fffffb);
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.productDescriptionSet sub {
+  color: var(--White, #fffffb);
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.productBenifits {
+  display: flex;
+  width: 100%;
+  padding: 80px 160px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.productBenifitsContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.productBenifitsContainer .s-heading {
+  width: 50%;
+}
+
+.productBenifitsLink {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--text-cod-gray-900, #3d3d3d);
+  text-decoration: none;
+}
+
+.productBenifitsLink p {
+  color: var(--text-cod-gray-200, #d1d1d1);
+  font-family: "Merriweather Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.productBenifitsImg {
+  width: 50%;
+  height: 458px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productBenifitsImg img {
+  width: 100%;
+  height: 458px;
+  object-fit: cover;
+}
+
 /* Components */
 
 .componentsBanner {
@@ -358,6 +560,7 @@
 .componentsBanner img {
   width: 100%;
   height: 100svh;
+  object-fit: contain;
 }
 
 .componentsContainer {
@@ -430,144 +633,143 @@
   line-height: 28px;
 }
 
-
-.componentDisplayContainer{
+.componentDisplayContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-.componentDisplayHeading{
+.componentDisplayHeading {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
-.componentDisplayHeading p{
-  color: #FFF;
-font-family: Merriweather;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px;
+.componentDisplayHeading p {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
 }
 
-.componentDisplayHeading span{
+.componentDisplayHeading span {
   width: 552px;
   color: var(--text-cod-gray-400, #888);
-font-family: "Merriweather Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.componentDisplayDiv{
+.componentDisplayDiv {
   width: 100%;
   display: flex;
-align-items: center;
-gap: 24px;
+  align-items: center;
+  gap: 24px;
 }
 
-.componentDisplaySet{
+.componentDisplaySet {
   display: flex;
-width: 50%;
-height: 396px;
-flex-direction: column;
-align-items: center;
+  width: 50%;
+  height: 396px;
+  flex-direction: column;
+  align-items: center;
   border-radius: 4px;
-border: 1px solid var(--text-cod-gray-900, #3D3D3D);
-box-shadow: -5px 4px 40px 0px rgba(113, 113, 113, 0.15);
+  border: 1px solid var(--text-cod-gray-900, #3d3d3d);
+  box-shadow: -5px 4px 40px 0px rgba(113, 113, 113, 0.15);
 }
 
-.componentDisplayImg{
+.componentDisplayImg {
   width: 100%;
   height: 250px;
   overflow: hidden;
 }
 
-.componentDisplayImg img{
+.componentDisplayImg img {
   width: 100%;
   object-fit: cover;
 }
 
-.componentDisplayTextContainer{
+.componentDisplayTextContainer {
   display: flex;
-padding: 8px 16px 16px 16px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
+  padding: 8px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
 }
 
-.componentDisplayText{
+.componentDisplayText {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
-.componentDisplayText p{
-  color: var(--default-white, #FFF);
-font-family: "Merriweather Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; 
+.componentDisplayText p {
+  color: var(--default-white, #fff);
+  font-family: "Merriweather Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-.componentDisplayText span{
+.componentDisplayText span {
   color: var(--text-cod-gray-400, #888);
-font-family: "Merriweather Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.componentDisplayTextContainer .price{
-  color: var(--text-cod-gray-200, #D1D1D1);
-font-family: "Merriweather Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px;
+.componentDisplayTextContainer .price {
+  color: var(--text-cod-gray-200, #d1d1d1);
+  font-family: "Merriweather Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
 }
 
-.componentButtonDiv{
+.componentButtonDiv {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.componentButton{
+.componentButton {
   display: flex;
-padding: 12px 24px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-border-radius: 8px;
-background: var(--text-cod-gray-100, #E7E7E7);
-cursor: pointer;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--text-cod-gray-100, #e7e7e7);
+  cursor: pointer;
 }
 
-.componentButton p{
-  color: var(--text-cod-gray-900, #3D3D3D);
-font-family: "Merriweather Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
+.componentButton p {
+  color: var(--text-cod-gray-900, #3d3d3d);
+  font-family: "Merriweather Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.SeeLess svg{
+.SeeLess svg {
   transform: rotate(-180deg);
 }
 
