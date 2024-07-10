@@ -20,7 +20,7 @@ function Navbar() {
             <Link to="/components" className="navbarMainLinkText">
               Components
             </Link>
-            <Link to="/about" className="navbarMainLinkText">
+            <Link to="/aboutus" className="navbarMainLinkText">
               Our world
             </Link>
           </div>
