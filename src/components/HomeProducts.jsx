@@ -1,5 +1,6 @@
 import Gokart from "../assets/gokart_blue.jpeg";
 import Dune_buggy from "../assets/Dune_buggy.jpeg";
+import GlowButton from "./GlowButton";
 function HomeProducts() {
   return (
     <>
@@ -25,6 +26,30 @@ function HomeProducts() {
             <div className="p-gokart-text-main">
               <div className="p-gokart-label">
                 <p>Gokart</p>
+                <GlowButton>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.83325 14.6666L14.1666 6.33325"
+                      stroke="#F6F6F6"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M5.83325 6.33325H14.1666V14.6666"
+                      stroke="#F6F6F6"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </GlowButton>
                 <div className="p-svg-cover">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
