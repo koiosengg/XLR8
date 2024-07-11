@@ -1,7 +1,7 @@
 import Gokart from "../assets/gokart_blue.jpeg";
 import Dune_buggy from "../assets/Dune_buggy.jpeg";
-import GlowButton from "./GlowButton";
-function HomeProducts() {
+import { Link } from "react-router-dom";
+function HomeProducts(props) {
   return (
     <>
       <div className="p-products">
@@ -26,7 +26,37 @@ function HomeProducts() {
             <div className="p-gokart-text-main">
               <div className="p-gokart-label">
                 <p>Gokart</p>
-                <GlowButton toLink="/contact" />
+                <div className="footer-get-quote secondary">
+                  <Link
+                    to={"/contact"}
+                    className="footerLinkText secondary"
+                    style={{ padding: "8px" }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.83325 14.6666L14.1666 6.33325"
+                        stroke="#F6F6F6"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M5.83325 6.33325H14.1666V14.6666"
+                        stroke="#F6F6F6"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                  <div className="footerColorRotate"></div>
+                </div>
               </div>
               <p className="p-product-desc">
                 Office ipsum you must be muted. Search decisions read
@@ -52,7 +82,37 @@ function HomeProducts() {
                 <div className="p-gokart-text-main">
                   <div className="p-gokart-label">
                     <p>Dune Buggy</p>
-                    <GlowButton toLink="/contact" />
+                    <div className="footer-get-quote secondary">
+                      <Link
+                        to={"/contact"}
+                        className="footerLinkText secondary"
+                        style={{ padding: "8px" }}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.83325 14.6666L14.1666 6.33325"
+                            stroke="#F6F6F6"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M5.83325 6.33325H14.1666V14.6666"
+                            stroke="#F6F6F6"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </Link>
+                      <div className="footerColorRotate"></div>
+                    </div>
                   </div>
                   <p className="p-product-desc">
                     Office ipsum you must be muted. Pulling cadence sorry into
@@ -73,53 +133,37 @@ function HomeProducts() {
                 <div className="p-gokart-text-main">
                   <div className="p-gokart-label">
                     <p>Offroad Kart</p>
-                    <GlowButton toLink="/contact">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none"
+                    <div className="footer-get-quote secondary">
+                      <Link
+                        to={"/contact"}
+                        className="footerLinkText secondary"
+                        style={{ padding: "8px" }}
                       >
-                        <path
-                          d="M5.83325 14.6666L14.1666 6.33325"
-                          stroke="#F6F6F6"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M5.83325 6.33325H14.1666V14.6666"
-                          stroke="#F6F6F6"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </GlowButton>
-                    {/* 
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M5.83325 14.6666L14.1666 6.33325"
-                          stroke="#F6F6F6"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M5.83325 6.33325H14.1666V14.6666"
-                          stroke="#F6F6F6"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>*/}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                        >
+                          <path
+                            d="M5.83325 14.6666L14.1666 6.33325"
+                            stroke="#F6F6F6"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M5.83325 6.33325H14.1666V14.6666"
+                            stroke="#F6F6F6"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </Link>
+                      <div className="footerColorRotate"></div>
+                    </div>
                   </div>
                   <p className="p-product-desc">
                     Office ipsum you must be muted. Pulling cadence sorry into

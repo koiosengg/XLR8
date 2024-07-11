@@ -485,8 +485,6 @@ textarea {
   align-self: stretch;
   border-radius: 16px;
   border: 3px solid #111;
-  background: #161616;
-
   background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
     linear-gradient(to top, #36a7be66 40%, #36a7be 70%, #111111 100%) border-box;
 }
@@ -499,7 +497,7 @@ textarea {
   );
   border-image-slice: 1;
   transition: border-image 1s ease-in-out;
-  /* background: #111; */
+  background-color: #111 !important;
 }
 .p-gokart-label {
   display: flex;
@@ -517,8 +515,6 @@ textarea {
   line-height: 32px;
   width: 100%;
 }
-
-
 
 .p-product-subtext {
   color: var(--text-cod-gray-300, #b0b0b0);
@@ -1158,9 +1154,22 @@ textarea {
   object-fit: cover;
 }
 
+.footer-get-quote.secondary:hover .footerLinkText {
+  color: var(--text-cod-gray-900, #3d3d3d);
+}
+.p-vertical-card:hover .footer-get-quote.secondary {
+  background-color: #fff !important;
+}
 
+.p-horizontal-card:hover .footer-get-quote.secondary {
+  background-color: #fff !important;
+}
 
-
-
-
-
+.p-vertical-card:hover svg path {
+  stroke: #3d3d3d;
+  border: none;
+}
+.p-horizontal-card:hover svg path {
+  stroke: #3d3d3d;
+  border: none;
+}
