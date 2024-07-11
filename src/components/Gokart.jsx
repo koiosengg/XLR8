@@ -4,6 +4,7 @@ import ProductBenifits from "../assets/ProductsImg/ProductBenifits.png";
 import ProductPrecision from "../assets/ProductsImg/ProductPrecision.png";
 import ProductVarients from "../assets/ProductsImg/ProductVarients.png";
 import GlowButton from "./GlowButton";
+import ContactFooter from "./ContactFooter"
 import MainFooter from "./MainFooter";
 import { Link } from "react-router-dom";
 
@@ -13,11 +14,10 @@ const productVarientsData = [
   { title: "3 Off Road Kart", details: "5 Kw", imgSrc: ProductVarients },
   { title: "4 Off Road Kart", details: "5 Kw", imgSrc: ProductVarients },
   { title: "5 Off Road Kart", details: "5 Kw", imgSrc: ProductVarients },
-  // Add more objects as needed with your data
 ];
 
 function Gokart() {
-  const [offset, setOffset] = useState(0); // State to track the offset of displayed sets
+  const [offset, setOffset] = useState(0);
 
   const handleNext = () => {
     if (offset < productVarientsData.length - 3) {
@@ -129,19 +129,29 @@ function Gokart() {
       </div>
       <div className="productPrecision">
         <div className="productPrecisionContainer">
-          <div className="s-heading">
-            <p>Precision Parts for Peak Performance</p>
-            <div
-              className="s-heading-sub-text"
-              style={{ paddingBottom: "8px" }}
-            >
-              Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
-              felis quis ultrices lacinia proin pellentesque. Vivamus
+          <div
+            style={{
+              padding: "80px 40px 40px 40px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap:"64px"
+            }}
+          >
+            <div className="s-heading">
+              <p>Precision Parts for Peak Performance</p>
+              <div
+                className="s-heading-sub-text"
+                style={{ paddingBottom: "8px" }}
+              >
+                Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
+                felis quis ultrices lacinia proin pellentesque. Vivamus
+              </div>
+              <GlowButton toLink="/components" text="Let’s Go" />
             </div>
-            <GlowButton toLink="/components" text="Let’s Go" />
-          </div>
-          <div className="productPrecisionImg">
-            <img src={ProductPrecision}></img>
+            <div className="productPrecisionImg">
+              <img src={ProductPrecision}></img>
+            </div>
           </div>
         </div>
       </div>
@@ -163,7 +173,7 @@ function Gokart() {
         <div className="productSpecificationContainer">
           <div
             className="productSpecificationSet"
-            style={{ borderLeft: "2px solid" }}
+            style={{ borderLeft: "1px solid" }}
           >
             <p className="productHeading">Component Specification</p>
             <div className="productSpecificationInfo">
@@ -374,6 +384,7 @@ function Gokart() {
           </svg>
         </div>
       </div>
+      <ContactFooter/>
       <MainFooter />
     </div>
   );

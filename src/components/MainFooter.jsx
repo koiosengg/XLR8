@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function MainFooter() {
   return (
     <>
-      
       <div className="footerLine"></div>
       <div className="footerEnd">
         <div className="footerEndLeft">
@@ -118,51 +117,51 @@ function MainFooter() {
         </div>
         <div className="footerEndRight">
           <div className="footerEndRightSvg">
-            <a href="">
+            <a className="footerFacebook" href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
-                height="25"
-                viewBox="0 0 24 25"
+                height="24"
+                viewBox="0 0 24 24"
                 fill="none"
               >
                 <path
-                  d="M18 2.5H15C13.6739 2.5 12.4021 3.02678 11.4645 3.96447C10.5268 4.90215 10 6.17392 10 7.5V10.5H7V14.5H10V22.5H14V14.5H17L18 10.5H14V7.5C14 7.23478 14.1054 6.98043 14.2929 6.79289C14.4804 6.60536 14.7348 6.5 15 6.5H18V2.5Z"
+                  d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
                   stroke="#D1D1D1"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </a>
-            <a href="">
+            <a className="footerLinkedIn" href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
-                height="25"
-                viewBox="0 0 24 25"
+                height="24"
+                viewBox="0 0 24 24"
                 fill="none"
               >
                 <path
-                  d="M17 2.5H7C4.23858 2.5 2 4.73858 2 7.5V17.5C2 20.2614 4.23858 22.5 7 22.5H17C19.7614 22.5 22 20.2614 22 17.5V7.5C22 4.73858 19.7614 2.5 17 2.5Z"
+                  d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
                   stroke="#D1D1D1"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
                 <path
-                  d="M16 11.8701C16.1234 12.7023 15.9812 13.5523 15.5937 14.2991C15.2062 15.0459 14.5931 15.6515 13.8416 16.0297C13.0901 16.408 12.2384 16.5397 11.4077 16.406C10.5771 16.2723 9.80971 15.8801 9.21479 15.2852C8.61987 14.6903 8.22768 13.9229 8.09402 13.0923C7.96035 12.2616 8.09202 11.41 8.47028 10.6584C8.84854 9.90691 9.45414 9.2938 10.2009 8.9063C10.9477 8.5188 11.7977 8.37665 12.63 8.50006C13.4789 8.62594 14.2648 9.02152 14.8716 9.62836C15.4785 10.2352 15.8741 11.0211 16 11.8701Z"
+                  d="M6 9H2V21H6V9Z"
                   stroke="#D1D1D1"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
                 <path
-                  d="M17.5 7H17.51"
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
                   stroke="#D1D1D1"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </a>
