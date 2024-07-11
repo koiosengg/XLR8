@@ -5,6 +5,13 @@ import Gokart from "../assets/gokart_blue.jpeg";
 import galleryImg1 from "../assets/Gallery/s-gallery-img-1.png";
 import galleryImg10 from "../assets/Gallery/s-gallery-img-10.png";
 import MainFooter from "./MainFooter";
+import Dune_buggy from "../assets/Dune_buggy.jpeg";
+import Steering_wheel from "../assets/steering_wheel.png"
+import Speedometer from "../assets/Speedometer.jpeg"
+import Tricycle from "../assets/Tricycle.jpeg"
+import ContactFooter from "./ContactFooter";
+
+
 const AboutUs = () => {
   return (
     <>
@@ -454,29 +461,45 @@ const AboutUs = () => {
           <div className="p-collecting-label">Collection Gallery</div>
           <div className="p-gallery-grid">
             <div className="p-gallery-left">
-              <div className="p-img-container-div" style={{ height: "233px" }}>
-                <img src={galleryImg3} alt="" />
+              <div
+                className="p-img-container-div"
+                style={{ height: "233px", borderLeft: "1px solid #36A7BE" }}
+              >
+                <img src={Dune_buggy} alt="Dune buggy" />
               </div>
-              <div className="p-img-container-div" style={{ height: "506px" }}>
-                <img src={galleryImg3} alt="" />
+              <div
+                className="p-img-container-div"
+                style={{ height: "506px", borderTop: "1px solid #36A7BE" }}
+              >
+                <img src={Steering_wheel} alt="Steering wheel" />
               </div>
             </div>
             <div className="p-gallery-mid">
-              <div className="p-img-container-div" style={{ height: "506px" }}>
-                <img src={galleryImg3} alt="" />
+              <div
+                className="p-img-container-div"
+                style={{ height: "506px", borderTop: "1px solid #36A7BE" }}
+              >
+                <img src={Gokart} alt="Gokart" />
               </div>
-              <div className="p-img-container-div" style={{ height: "233px" }}>
-                <img src={galleryImg3} alt="" />
+              <div
+                className="p-img-container-div"
+                style={{ height: "233px", borderBottom: "1px solid #36A7BE" }}
+              >
+                <img src={Speedometer} alt="Speedometer" />
               </div>
             </div>
             <div className="p-gallery-right">
-              <div className="p-img-container-div" style={{ height: "100%" }}>
-                <img src={galleryImg3} alt="" />
+              <div
+                className="p-img-container-div"
+                style={{ height: "100%", borderRight: "1px solid #36A7BE" }}
+              >
+                <img src={Tricycle} alt="Tricycle" />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <ContactFooter/>
       <MainFooter />
     </>
   );

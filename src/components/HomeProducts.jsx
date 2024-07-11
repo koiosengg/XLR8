@@ -26,54 +26,7 @@ function HomeProducts() {
             <div className="p-gokart-text-main">
               <div className="p-gokart-label">
                 <p>Gokart</p>
-                <GlowButton>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="21"
-                    viewBox="0 0 20 21"
-                    fill="none"
-                  >
-                    <path
-                      d="M5.83325 14.6666L14.1666 6.33325"
-                      stroke="#F6F6F6"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M5.83325 6.33325H14.1666V14.6666"
-                      stroke="#F6F6F6"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </GlowButton>
-                <div className="p-svg-cover">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="21"
-                    viewBox="0 0 20 21"
-                    fill="none"
-                  >
-                    <path
-                      d="M5.83325 14.6666L14.1666 6.33325"
-                      stroke="#F6F6F6"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M5.83325 6.33325H14.1666V14.6666"
-                      stroke="#F6F6F6"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
+                <GlowButton toLink="/contact" />
               </div>
               <p className="p-product-desc">
                 Office ipsum you must be muted. Search decisions read
@@ -99,30 +52,7 @@ function HomeProducts() {
                 <div className="p-gokart-text-main">
                   <div className="p-gokart-label">
                     <p>Dune Buggy</p>
-                    <div className="p-svg-cover">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M5.83325 14.6666L14.1666 6.33325"
-                          stroke="#F6F6F6"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M5.83325 6.33325H14.1666V14.6666"
-                          stroke="#F6F6F6"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
+                    <GlowButton toLink="/contact" />
                   </div>
                   <p className="p-product-desc">
                     Office ipsum you must be muted. Pulling cadence sorry into
@@ -143,7 +73,7 @@ function HomeProducts() {
                 <div className="p-gokart-text-main">
                   <div className="p-gokart-label">
                     <p>Offroad Kart</p>
-                    <div className="p-svg-cover">
+                    <GlowButton toLink="/contact">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -166,7 +96,30 @@ function HomeProducts() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </div>
+                    </GlowButton>
+                    {/* 
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.83325 14.6666L14.1666 6.33325"
+                          stroke="#F6F6F6"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M5.83325 6.33325H14.1666V14.6666"
+                          stroke="#F6F6F6"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>*/}
                   </div>
                   <p className="p-product-desc">
                     Office ipsum you must be muted. Pulling cadence sorry into

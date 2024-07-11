@@ -486,6 +486,9 @@ textarea {
   border-radius: 16px;
   border: 3px solid #111;
   background: #161616;
+
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    linear-gradient(to top, #36a7be66 40%, #36a7be 70%, #111111 100%) border-box;
 }
 .p-horizontal-card:hover {
   border-image: linear-gradient(
@@ -495,6 +498,8 @@ textarea {
     #111111 100%
   );
   border-image-slice: 1;
+  transition: border-image 1s ease-in-out;
+  /* background: #111; */
 }
 .p-gokart-label {
   display: flex;
@@ -513,17 +518,7 @@ textarea {
   width: 100%;
 }
 
-.p-svg-cover {
-  display: flex;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  border: 1px solid var(--stroke-dark, #142d38);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
+
 
 .p-product-subtext {
   color: var(--text-cod-gray-300, #b0b0b0);
@@ -577,16 +572,19 @@ textarea {
   align-self: stretch;
   border-radius: 16px;
   border: 3px solid #111;
-  background: #161616;
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    linear-gradient(to top, #36a7be66 40%, #36a7be 70%, #111111 100%) border-box;
 }
 .p-vertical-card:hover {
   border-image: linear-gradient(
     to top,
-    #36a7be66 10%,
-    #36a7be 50%,
+    #36a7be66 40%,
+    #36a7be 70%,
     #111111 100%
   );
   border-image-slice: 1;
+  transition: border-image 1s ease-in-out;
+  /* background: #111; */
 }
 .p-img-cover-vertical {
   width: 100%;
@@ -804,12 +802,15 @@ textarea {
   align-self: stretch;
 }
 .p-journey-label {
+  width: 100%;
   color: #fff;
   font-family: "Merriweather Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #142d38;
 }
 .p-journey-text-main {
   display: flex;
@@ -877,12 +878,15 @@ textarea {
   gap: 24px;
 }
 .p-features-label {
+  width: 100%;
   color: #fff;
   font-family: "Merriweather Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  padding-bottom: 10px;
   line-height: 24px;
+  border-bottom: 1px dashed #142d38;
 }
 .p-why-choose-us-container {
   display: flex;
@@ -1006,6 +1010,9 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  border-bottom: 1px dashed #142d38;
+  width: 100%;
+  padding-bottom: 10px;
 }
 .p-perfect-ride-text h1 {
   color: var(--default-white, #fff);
@@ -1048,6 +1055,9 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  border-bottom: 1px dashed #142d38;
+  width: 100%;
+  padding-bottom: 10px;
 }
 .p-electrify-text h1 {
   color: var(--text-cod-gray-50, #f6f6f6);
@@ -1140,9 +1150,17 @@ textarea {
   flex-direction: row;
   gap: 24px;
   width: 100%;
+  padding-bottom: 48px;
 }
 .p-img-container-div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
+
+
+
