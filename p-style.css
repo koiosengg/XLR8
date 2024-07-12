@@ -476,17 +476,14 @@ textarea {
 }
 
 .p-horizontal-card {
-  display: flex;
-  height: fit-content;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
   align-self: stretch;
   border-radius: 16px;
   border: 3px solid #111;
-  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+  /* background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
     linear-gradient(to top, #36a7be66 40%, #36a7be 70%, #111111 100%) border-box;
+} */
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    linear-gradient(65deg, #36a7be66 10%, #36a7be 30%, #111111 100%) border-box;
 }
 .p-horizontal-card:hover {
   border-image: linear-gradient(
@@ -495,9 +492,19 @@ textarea {
     #36a7be 70%,
     #111111 100%
   );
-  border-image-slice: 1;
-  transition: border-image 1s ease-in-out;
+  transition: 0.5s ease-in-out;
   background-color: #111 !important;
+  border: double 3px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.p-card-container {
+  padding: 32px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 .p-gokart-label {
   display: flex;
@@ -558,18 +565,21 @@ textarea {
   gap: 16px;
 }
 .p-vertical-card {
-  width: 100%;
-  display: flex;
-  height: fit-content;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  padding: 0px;
   align-self: stretch;
   border-radius: 16px;
   border: 3px solid #111;
   background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
-    linear-gradient(to top, #36a7be66 40%, #36a7be 70%, #111111 100%) border-box;
+    linear-gradient(65deg, #36a7be66 10%, #36a7be 30%, #111111 100%) border-box;
+}
+.p-vertical-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 24px;
 }
 .p-vertical-card:hover {
   border-image: linear-gradient(
@@ -578,9 +588,9 @@ textarea {
     #36a7be 70%,
     #111111 100%
   );
-  border-image-slice: 1;
-  transition: border-image 1s ease-in-out;
-  /* background: #111; */
+  transition: 0.5s ease-in;
+  border: double 3px transparent;
+  background-origin: border-box;
 }
 .p-img-cover-vertical {
   width: 100%;

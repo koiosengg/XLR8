@@ -624,7 +624,12 @@
   gap: 26px;
   transition: all 0.5s;
   border-right: 1px solid;
-  border-image: linear-gradient(0deg, rgba(54, 167, 190, 0.00) 0%, rgba(54, 167, 190, 0.00) 100%), linear-gradient(180deg, #142D38 0%, #387F9E 100%);
+  border-image: linear-gradient(
+      0deg,
+      rgba(54, 167, 190, 0) 0%,
+      rgba(54, 167, 190, 0) 100%
+    ),
+    linear-gradient(180deg, #142d38 0%, #387f9e 100%);
   border-image-slice: 1;
   position: relative;
   cursor: pointer;
