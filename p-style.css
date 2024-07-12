@@ -446,7 +446,7 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  width: 100%;
+  width: 600px;
 }
 
 .p-product-text-container span {
@@ -619,13 +619,16 @@ textarea {
   line-height: 24px;
 }
 .p-testimonies-label h1 {
-  width: 100%;
+  width: 569px;
   color: var(--default-white, #fff);
   font-family: Merriweather;
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 140%;
+}
+.p-testimonies-label span {
+  font-weight: 700;
 }
 .p-testimonies-item {
   display: flex;
@@ -711,10 +714,12 @@ textarea {
   flex-direction: column;
 }
 .p-our-World-main {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 100px;
+  justify-content: space-between;
 }
 
 .p-xlr8-background {
@@ -823,7 +828,7 @@ textarea {
   font-family: Merriweather;
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 60px;
   letter-spacing: -0.96px;
 }
@@ -832,7 +837,7 @@ textarea {
   font-family: Merriweather;
   font-size: 48px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.96px;
 }
@@ -908,6 +913,9 @@ textarea {
   font-weight: 400;
   line-height: normal;
 }
+.p-why-choose-right span {
+  font-weight: 700;
+}
 .p-why-choose-right p {
   color: var(--text-cod-gray-300, #b0b0b0);
   font-family: "Merriweather Sans";
@@ -982,6 +990,9 @@ textarea {
   line-height: 60px;
   letter-spacing: -0.96px;
 }
+.p-behind-the-name-text span {
+  font-weight: 700;
+}
 .p-behind-the-name-text p {
   color: var(--text-cod-gray-300, #b0b0b0);
   font-family: "Merriweather Sans";
@@ -1015,8 +1026,11 @@ textarea {
   font-family: Merriweather;
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
+}
+.p-perfect-ride-text span {
+  font-weight: 700;
 }
 .p-perfect-ride-text p {
   color: var(--text-cod-gray-300, #b0b0b0);
@@ -1025,6 +1039,7 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  width: 418px;
 }
 .p-line-container {
   display: flex;
@@ -1033,6 +1048,10 @@ textarea {
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+}
+.p-line-container svg {
+  width: 100%;
+  height: 100%;
 }
 .p-electrify-main {
   display: flex;
@@ -1063,13 +1082,14 @@ textarea {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.96px;
+  width: 547px;
 }
 .p-electrify-text span {
   color: var(--text-cod-gray-50, #f6f6f6);
   font-family: Merriweather;
   font-size: 48px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 140%;
   letter-spacing: -0.96px;
 }
@@ -1081,7 +1101,7 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  width: 60%;
+  width: 812px;
 }
 
 .p-electrify-desc {
@@ -1172,4 +1192,104 @@ textarea {
 .p-horizontal-card:hover svg path {
   stroke: #3d3d3d;
   border: none;
+}
+
+.p-advantages-main {
+  display: flex;
+  width: 100%;
+  padding: 80px 160px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.p-advantages-label {
+  color: #fff;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #142d38;
+  width: 100%;
+}
+.p-adv-text-div {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  flex-direction: column;
+}
+.p-adv-text-div h1 {
+  color: var(--default-white, #fff);
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  width: 652px;
+}
+.p-adv-text-div span {
+  font-weight: 700;
+}
+.p-adv-text-div p {
+  color: var(--text-cod-gray-300, #b0b0b0);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 800px;
+}
+.p-advantage-container-cover {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+}
+.p-adv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.p-icon-cover {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: radial-gradient(
+    203.38% 99.14% at 50% 0%,
+    #d1d1d1 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.p-icon-text {
+  display: flex;
+  width: 198px;
+  align-items: center;
+  gap: 24px;
+}
+.p-icon-animate {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+.p-icon-animate img {
+  width: 100%;
+  height: 100%;
+}
+.p-line-div {
+  width: 914.948px;
+  height: 71.055px;
+  transform: rotate(-16.698deg);
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #fff;
 }

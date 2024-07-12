@@ -5,7 +5,9 @@ const testimonies = () => {
     <div className="p-testimonies">
       <div className="p-testimonies-label">
         <p>Testimonials</p>
-        <h1>Stories from the track </h1>
+        <h1>
+          <span>Stories</span> from the track
+        </h1>
       </div>
       <div className="p-testimonies-item">
         <div className="p-testimonies-container">

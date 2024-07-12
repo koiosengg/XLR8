@@ -6,11 +6,11 @@ import galleryImg1 from "../assets/Gallery/s-gallery-img-1.png";
 import galleryImg10 from "../assets/Gallery/s-gallery-img-10.png";
 import MainFooter from "./MainFooter";
 import Dune_buggy from "../assets/Dune_buggy.jpeg";
-import Steering_wheel from "../assets/steering_wheel.png"
-import Speedometer from "../assets/Speedometer.jpeg"
-import Tricycle from "../assets/Tricycle.jpeg"
+import Steering_wheel from "../assets/steering_wheel.png";
+import Speedometer from "../assets/Speedometer.jpeg";
+import Tricycle from "../assets/Tricycle.jpeg";
 import ContactFooter from "./ContactFooter";
-
+import Advantages from "./Advantages";
 
 const AboutUs = () => {
   return (
@@ -192,7 +192,7 @@ const AboutUs = () => {
           <div className="p-journey-text-main">
             <div className="p-journey-main-heading">
               <h1>
-                Our journey <span>on the racing track</span>
+                <span> Our journey</span> on the racing track
               </h1>
             </div>
             <div className="p-journey-desc-container">
@@ -258,7 +258,9 @@ const AboutUs = () => {
           <div className="p-features-label">Features</div>
           <div className="p-why-choose-us-container">
             <div className="p-why-choose-right">
-              <h1>Why Choose us</h1>
+              <h1>
+                Why <span> Choose us </span>{" "}
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed imperdiet ifelis
                 quis ultrices lacinia proin pel{" "}
@@ -392,7 +394,9 @@ const AboutUs = () => {
         <div className="p-behind-the-name-main">
           <div className="p-behind-name-cover">
             <div className="p-behind-the-name-text">
-              <h1>Behind the Name</h1>
+              <h1>
+                Behind the <span> Name </span>{" "}
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
                 felis quis ultrices lacinia proin pellentesque. Vivamus est
@@ -410,13 +414,28 @@ const AboutUs = () => {
         <div className="p-perfect-ride-main">
           <div className="p-process-label">Process</div>
           <div className="p-perfect-ride-text">
-            <h1>Creating your Perfect Ride</h1>
+            <h1>
+              <span> Creating </span> your Perfect Ride
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Sed imperdiet ifelis quis
               ultrices lacinia proin pel{" "}
             </p>
           </div>
-          <div className="p-line-container"></div>
+          <div className="p-line-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="882"
+              height="248"
+              viewBox="0 0 882 248"
+              fill="none"
+            >
+              <path
+                d="M0.195882 247.189L94.7207 243.26L253.171 151.649L444.389 159.774L573.728 58.5604L752.591 67.9428L881.289 0.584852"
+                stroke="white"
+              />
+            </svg>
+          </div>
         </div>
 
         <div className="p-electrify-main">
@@ -499,7 +518,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <ContactFooter/>
+      <Advantages />
+      <ContactFooter />
       <MainFooter />
     </>
   );
