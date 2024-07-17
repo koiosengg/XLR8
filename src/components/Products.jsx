@@ -26,6 +26,26 @@ function Products() {
           <p className="mainProductsText">Dune Buggy</p>
         </Link>
       </div>
+      <div className="mainProductsContainer">
+        <Link to="/products/Gokart" className="mainProductsSet">
+          <div className="mainProductsImg">
+            <img src={MainProductsSample1}></img>
+          </div>
+          <p className="mainProductsText">Gokart</p>
+        </Link>
+        <Link to="/" className="mainProductsSet">
+          <div className="mainProductsImg">
+            <img src={MainProductsSample2}></img>
+          </div>
+          <p className="mainProductsText">Dune Buggy</p>
+        </Link>
+        <Link to="/" className="mainProductsSet">
+          <div className="mainProductsImg">
+            <img src={MainProductsSample2}></img>
+          </div>
+          <p className="mainProductsText">Dune Buggy</p>
+        </Link>
+      </div>
     </div>
   );
 }

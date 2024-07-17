@@ -12,6 +12,8 @@ import Tricycle from "../assets/Tricycle.jpeg";
 import ContactFooter from "./ContactFooter";
 import Advantages from "./Advantages";
 
+import Spline from "@splinetool/react-spline";
+
 const AboutUs = () => {
   return (
     <>
@@ -392,24 +394,31 @@ const AboutUs = () => {
         </div>
 
         <div className="p-behind-the-name-main">
-          <div className="p-behind-name-cover">
-            <div className="p-behind-the-name-text">
-              <h1>
-                Behind the <span> Name </span>{" "}
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
-                felis quis ultrices lacinia proin pellentesque. Vivamus est
-                ispre oilfg hynm Lorem ipsum dolor sit amet consectetur. Sed
-                imperdiet in diam felis quis ultrices lacinia proin Lorem ipsum
-                dolor sit amet consectetur. Sed imperdiet in diam felis quis
-                ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
-                hynm Lorem ipsum dolor sit amet consectetur. Sed imperdiet in
-                diam felis quis ultrices lacinia proin{" "}
-              </p>
+          <div className="p-behind-div">
+            <div className="p-behind-name-cover">
+              <div className="p-behind-the-name-text">
+                <h1>
+                  Behind the <span> Name </span>{" "}
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
+                  felis quis ultrices lacinia proin pellentesque. Vivamus est
+                  ispre oilfg hynm Lorem ipsum dolor sit amet consectetur. Sed
+                  imperdiet in diam felis quis ultrices lacinia proin Lorem
+                  ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
+                  quis ultrices lacinia proin pellentesque. Vivamus est ispre
+                  oilfg hynm Lorem ipsum dolor sit amet consectetur. Sed
+                  imperdiet in diam felis quis ultrices lacinia proin{" "}
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
+        <Spline
+          scene="https://prod.spline.design/JIOZ32ZzWZIqi6ww/scene.splinecode"
+          style={{ width: "100%", height: "500px" }}
+        />
 
         <div className="p-perfect-ride-main">
           <div className="p-process-label">Process</div>
