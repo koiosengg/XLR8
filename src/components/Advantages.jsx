@@ -1,5 +1,5 @@
 import React from "react";
-import GlowButton from "./GlowButton";
+import GreyButton from "./GreyButton";
 import Battery from "../assets/battery-icon.png";
 const Advantages = () => {
   return (
@@ -21,7 +21,7 @@ const Advantages = () => {
               </p>
             </div>
             <div>
-              <GlowButton text="Know more" />
+              <GreyButton text="Know more" toLink="/contact" />
             </div>
           </div>
 

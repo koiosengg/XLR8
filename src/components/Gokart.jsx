@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import BackgroundImg from "../assets/ComponentsImg/Background.png";
-import ProductBenifits from "../assets/ProductsImg/ProductBenifits.png";
 import ProductPrecision from "../assets/ProductsImg/ProductPrecision.png";
 import ProductVarients from "../assets/ProductsImg/ProductVarients.png";
 import GlowButton from "./GlowButton";
-import ContactFooter from "./ContactFooter"
+import ContactFooter from "./ContactFooter";
 import MainFooter from "./MainFooter";
-import { Link } from "react-router-dom";
+import ProductBenefit from "./ProductBenefit";
 
 const productVarientsData = [
   { title: "1 Off Road Kart", details: "5 Kw", imgSrc: ProductVarients },
@@ -90,43 +89,7 @@ function Gokart() {
           </div>
         </div>
       </div>
-      <div className="productBenifits">
-        <div className="s-sub-heading">Benefits</div>
-        <div className="productBenifitsContainer">
-          <div className="s-heading">
-            <p>
-              Change <span>the game with instant swap</span>
-            </p>
-            <div className="s-heading-sub-text" style={{ width: "418px" }}>
-              Lorem ipsum dolor sit amet consectetur. Magna fermentum diam erat
-              nisi et viverra cras nascetur. Ornare congue massa metus enim orci
-              molestie viverra elit pellentesque. Mi condimentum ligula eu
-              volutpat porta. Est commodo id nibh lectus morbi leo.
-            </div>
-            <Link to="" className="productBenifitsLink">
-              <p>Know more</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M9 18L15 12L9 6"
-                  stroke="#D1D1D1"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
-          </div>
-          <div className="productBenifitsImg">
-            <img src={ProductBenifits}></img>
-          </div>
-        </div>
-      </div>
+      <ProductBenefit />
       <div className="productPrecision">
         <div className="productPrecisionContainer">
           <div
@@ -135,7 +98,7 @@ function Gokart() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap:"64px"
+              gap: "64px",
             }}
           >
             <div className="s-heading">
@@ -384,7 +347,7 @@ function Gokart() {
           </svg>
         </div>
       </div>
-      <ContactFooter/>
+      <ContactFooter />
       <MainFooter />
     </div>
   );

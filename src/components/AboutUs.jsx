@@ -10,7 +10,6 @@ import Steering_wheel from "../assets/steering_wheel.png";
 import Speedometer from "../assets/Speedometer.jpeg";
 import Tricycle from "../assets/Tricycle.jpeg";
 import ContactFooter from "./ContactFooter";
-import Advantages from "./Advantages";
 
 import Spline from "@splinetool/react-spline";
 
@@ -593,7 +592,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Advantages />
       <ContactFooter />
       <MainFooter />
     </>

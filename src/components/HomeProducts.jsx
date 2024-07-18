@@ -1,7 +1,9 @@
 import Gokart from "../assets/gokart_blue.jpeg";
 import Dune_buggy from "../assets/Dune_buggy.jpeg";
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 function HomeProducts(props) {
+  let navigate = useNavigate();
   return (
     <>
       <div className="p-products">
@@ -19,7 +21,7 @@ function HomeProducts(props) {
           </p>
         </div>
         <div className="p-product-cards">
-          <div className="p-horizontal-card">
+          <div className="p-horizontal-card" onClick={() => navigate('/contact')}>
             <div className="p-card-container">
               <div className="p-img-cover">
                 <img src={Gokart} alt="GoKart" />
@@ -76,7 +78,7 @@ function HomeProducts(props) {
             </div>
           </div>
           <div className="p-vertical-card-container">
-            <div className="p-vertical-card">
+            <div className="p-vertical-card" onClick={() => navigate('/contact')}>
               <div className="p-vertical-container">
                 <div className="p-img-cover-vertical">
                   <img src={Dune_buggy} alt="Dune buggy" />
@@ -129,7 +131,7 @@ function HomeProducts(props) {
                 </div>
               </div>
             </div>
-            <div className="p-vertical-card">
+            <div className="p-vertical-card" onClick={() => navigate('/contact')}>
               <div className="p-vertical-container">
                 <div className="p-img-cover-vertical">
                   <img src={Dune_buggy} alt="Dune buggy" />
