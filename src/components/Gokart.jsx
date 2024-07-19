@@ -6,6 +6,8 @@ import GlowButton from "./GlowButton";
 import ContactFooter from "./ContactFooter";
 import MainFooter from "./MainFooter";
 import ProductBenefit from "./ProductBenefit";
+import ThreeSixty from "./ThreeSixty";
+import Go_kart_Top_Down from "../assets/Go-kart-Top-Down.png";
 
 const productVarientsData = [
   { title: "1 Off Road Kart", details: "5 Kw", imgSrc: ProductVarients },
@@ -89,6 +91,7 @@ function Gokart() {
           </div>
         </div>
       </div>
+      <ThreeSixty />
       <ProductBenefit />
       <div className="productPrecision">
         <div className="productPrecisionContainer">
@@ -116,6 +119,14 @@ function Gokart() {
               <img src={ProductPrecision}></img>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="p-gokart-main">
+        <div className="p-component-label">
+          <p>Component</p>
+        </div>
+        <div className="p-gokart-div">
+          <img src={Go_kart_Top_Down} alt="" />
         </div>
       </div>
       <div className="productSpecification">
