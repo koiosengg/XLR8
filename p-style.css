@@ -654,7 +654,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 24px;
+  gap: 48px;
 }
 
 .p-testimonies-label {
@@ -691,11 +691,11 @@ textarea {
 }
 .p-testimonies-container {
   display: flex;
-  gap: 10px;
+  gap: 22px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
 }
-
 .p-arrow-left,
 .p-arrow-right {
   display: flex;
@@ -707,7 +707,6 @@ textarea {
   flex-shrink: 0;
   align-self: center;
 }
-
 .p-center-line {
   width: 3px;
   height: 138px;
@@ -720,7 +719,7 @@ textarea {
 }
 .p-testimonies-card {
   display: flex;
-  width: 469.114px;
+  width: 100%;
   height: 138px;
   align-items: center;
   gap: 24px;
@@ -758,6 +757,14 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+.p-dots-container {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 /* AboutUs */
@@ -1523,4 +1530,32 @@ textarea {
   top: 0;
   position: absolute;
   padding: 0px 160px;
+}
+.p-gokart-img-cover img {
+  z-index: 1;
+}
+.p-zoom-point {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 999;
+}
+.p-zoom-point.one {
+  padding: 517px 0 0 75px;
+}
+.p-zoom-point.two {
+  padding: 533px 0 0 235px;
+}
+.p-zoom-point.three {
+  padding: 401px 0 0 268px;
+}
+.p-zoom-point.four {
+  padding: 232px 0 0 239px;
+}
+.p-zoom-point.five {
+  padding: 37px 0 0 315px;
+}
+.after {
+  display: none;
 }

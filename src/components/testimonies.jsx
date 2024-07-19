@@ -6,7 +6,8 @@ const testimonies = () => {
       <div className="p-testimonies-label">
         <p>Testimonials</p>
         <h1>
-          <span>Stories</span> from the track
+          <span>Stories</span> <br />
+          from the track
         </h1>
       </div>
       <div className="p-testimonies-item">
@@ -69,7 +70,6 @@ const testimonies = () => {
             </svg>
           </div>
         </div>
-        <div></div>
       </div>
     </div>
   );
