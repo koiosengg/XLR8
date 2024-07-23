@@ -127,7 +127,7 @@ function Gokart() {
         </div>
         <div className="p-gokart-div">
           <div className="p-gokart-img-cover">
-            <div className="p-zoom-point one">
+            <div className="p-point-one">
               <svg
                 className="before"
                 width="28"
@@ -209,7 +209,7 @@ function Gokart() {
                 </g>
               </svg>
             </div>
-            <div className="p-zoom-point two">
+            <div className="p-point-two">
               <svg
                 className="before"
                 width="28"
@@ -291,7 +291,7 @@ function Gokart() {
                 </g>
               </svg>
             </div>
-            <div className="p-zoom-point three">
+            <div className="p-point-three">
               <svg
                 className="before"
                 width="28"
@@ -373,7 +373,7 @@ function Gokart() {
                 </g>
               </svg>
             </div>
-            <div className="p-zoom-point four">
+            <div className="p-point-four">
               <svg
                 className="before"
                 width="28"
@@ -455,7 +455,7 @@ function Gokart() {
                 </g>
               </svg>
             </div>
-            <div className="p-zoom-point five">
+            <div className="p-point-five">
               <svg
                 className="before"
                 width="28"
