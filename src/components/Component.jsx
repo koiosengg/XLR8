@@ -9,6 +9,7 @@ import BatteryAndElectricals from "./BatteryAndElectricals";
 import Seat from "./Seat";
 import Steering from "./Steering";
 import Suspension from "./Suspension";
+import MainFooter from "./MainFooter"
 
 function Component() {
   const [activeComponent, setActiveComponent] = useState("AxleAssembly");
@@ -64,6 +65,7 @@ function Component() {
           </div>
         </div>
       </div>
+      <MainFooter />
     </>
   );
 }
