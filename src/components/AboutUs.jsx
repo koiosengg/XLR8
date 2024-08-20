@@ -11,7 +11,7 @@ import Speedometer from "../assets/Speedometer.jpeg";
 import Tricycle from "../assets/Tricycle.jpeg";
 import ContactFooter from "./ContactFooter";
 
-import Spline from "@splinetool/react-spline";
+import Model from "./Model";
 
 const AboutUs = () => {
   return (
@@ -414,10 +414,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <Spline
-          scene="https://prod.spline.design/JIOZ32ZzWZIqi6ww/scene.splinecode"
-          style={{ width: "100%", height: "500px" }}
-        />
+        <Model/>
 
         <div className="p-perfect-ride-main">
           <div className="p-process-label">Process</div>
