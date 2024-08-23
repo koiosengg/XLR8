@@ -414,8 +414,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <Model/>
-
         <div className="p-perfect-ride-main">
           <div className="p-process-label">Process</div>
           <div className="p-perfect-ride-text">

@@ -8,6 +8,8 @@ import MainFooter from "./MainFooter";
 import ProductBenefit from "./ProductBenefit";
 import ThreeSixty from "./ThreeSixty";
 import Go_kart_Top_Down from "../assets/Go-kart-Top-Down.png";
+import Model from "./Model";
+import goKartImg from "../assets/gokart_blue.jpeg";
 
 const productVarientsData = [
   { title: "1 Off Road Kart", details: "5 Kw", imgSrc: ProductVarients },
@@ -34,6 +36,7 @@ function Gokart() {
 
   const leftOpacity = offset === 0 ? 0.3 : 1;
   const rightOpacity = offset === productVarientsData.length - 3 ? 0.3 : 1;
+  
 
   return (
     <div className="productContainer">
@@ -127,56 +130,47 @@ function Gokart() {
         </div>
         <div className="p-gokart-div">
           <div className="p-gokart-img-cover">
-            <div className="p-point-one">
-              <svg
-                className="before"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
+            <div className="p-point-one p-point">
+              <div className="p-point-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  className="before"
+                >
                   <path
-                    id="Vector"
                     d="M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14Z"
                     fill="#FF0000"
                     fillOpacity="0.4"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
-                      fill="#FF0000"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M17.3335 14L10.6668 14"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M14 10.6667L14 17.3334"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <svg
-                className="after"
-                width="66"
-                height="66"
-                viewBox="0 0 66 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
+                    d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
+                    fill="#FF0000"
+                  />
+                  <path
+                    d="M17.3335 14L10.6668 14"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M14 10.6667L14 17.3334"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="66"
+                  height="66"
+                  viewBox="0 0 66 66"
+                  fill="none"
+                  className="after"
+                >
+                  <path
                     d="M0.75 33C0.75 50.8112 15.1888 65.25 33 65.25C50.8112 65.25 65.25 50.8112 65.25 33C65.25 15.1888 50.8112 0.75 33 0.75C15.1888 0.75 0.75 15.1888 0.75 33Z"
                     fill="#FF0000"
                     fillOpacity="0.8"
@@ -185,80 +179,103 @@ function Gokart() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
-                      fill="white"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M36.3335 33H29.6668"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M33 29.6665V36.3332"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <div className="p-point-two">
-              <svg
-                className="before"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
+                    d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M36.3335 33H29.6668"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M33 29.6665V36.3332"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="p-point-text">
+                <div className="p-point-img-border">
+                  <img src={goKartImg}></img>
+                </div>
+                <div className="p-point-text-heading">
+                  <sub>Wheel</sub>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eget in urna
+                    adipiscing
+                  </p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="131"
+                  height="95"
+                  viewBox="0 0 131 95"
+                  fill="none"
+                >
+                  <path
+                    d="M1.00053 0L1 94L131 94"
+                    stroke="url(#paint0_linear_650_1701)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_650_1701"
+                      x1="66"
+                      y1="0"
+                      x2="66"
+                      y2="94"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#142D38" />
+                      <stop offset="1" stopColor="#387F9E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div className="p-point-two p-point">
+              <div className="p-point-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  className="before"
+                >
+                  <path
                     d="M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14Z"
                     fill="#FF0000"
                     fillOpacity="0.4"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
-                      fill="#FF0000"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M17.3335 14L10.6668 14"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M14 10.6667L14 17.3334"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <svg
-                className="after"
-                width="66"
-                height="66"
-                viewBox="0 0 66 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
+                    d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
+                    fill="#FF0000"
+                  />
+                  <path
+                    d="M17.3335 14L10.6668 14"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M14 10.6667L14 17.3334"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="66"
+                  height="66"
+                  viewBox="0 0 66 66"
+                  fill="none"
+                  className="after"
+                >
+                  <path
                     d="M0.75 33C0.75 50.8112 15.1888 65.25 33 65.25C50.8112 65.25 65.25 50.8112 65.25 33C65.25 15.1888 50.8112 0.75 33 0.75C15.1888 0.75 0.75 15.1888 0.75 33Z"
                     fill="#FF0000"
                     fillOpacity="0.8"
@@ -267,80 +284,104 @@ function Gokart() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
-                      fill="white"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M36.3335 33H29.6668"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M33 29.6665V36.3332"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <div className="p-point-three">
-              <svg
-                className="before"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
+                    d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M36.3335 33H29.6668"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M33 29.6665V36.3332"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="p-point-text">
+                <div className="p-point-img-border">
+                  <img src={goKartImg}></img>
+                </div>
+                <div className="p-point-text-heading">
+                  <sub>Wheel</sub>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eget in urna
+                    adipiscing
+                  </p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="131"
+                  height="95"
+                  viewBox="0 0 131 95"
+                  fill="none"
+                  style={{ transform: "scaleX(-1)" }}
+                >
+                  <path
+                    d="M1.00053 0L1 94L131 94"
+                    stroke="url(#paint0_linear_650_1701)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_650_1701"
+                      x1="66"
+                      y1="0"
+                      x2="66"
+                      y2="94"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#142D38" />
+                      <stop offset="1" stopColor="#387F9E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div className="p-point-three p-point">
+              <div className="p-point-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  className="before"
+                >
+                  <path
                     d="M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14Z"
                     fill="#FF0000"
                     fillOpacity="0.4"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
-                      fill="#FF0000"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M17.3335 14L10.6668 14"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M14 10.6667L14 17.3334"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <svg
-                className="after"
-                width="66"
-                height="66"
-                viewBox="0 0 66 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
+                    d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
+                    fill="#FF0000"
+                  />
+                  <path
+                    d="M17.3335 14L10.6668 14"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M14 10.6667L14 17.3334"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="66"
+                  height="66"
+                  viewBox="0 0 66 66"
+                  fill="none"
+                  className="after"
+                >
+                  <path
                     d="M0.75 33C0.75 50.8112 15.1888 65.25 33 65.25C50.8112 65.25 65.25 50.8112 65.25 33C65.25 15.1888 50.8112 0.75 33 0.75C15.1888 0.75 0.75 15.1888 0.75 33Z"
                     fill="#FF0000"
                     fillOpacity="0.8"
@@ -349,195 +390,65 @@ function Gokart() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
-                      fill="white"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M36.3335 33H29.6668"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M33 29.6665V36.3332"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <div className="p-point-four">
-              <svg
-                className="before"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
-                    d="M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14Z"
-                    fill="#FF0000"
-                    fillOpacity="0.4"
+                    d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
+                    fill="white"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
-                      fill="#FF0000"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M17.3335 14L10.6668 14"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M14 10.6667L14 17.3334"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <svg
-                className="after"
-                width="66"
-                height="66"
-                viewBox="0 0 66 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
-                    d="M0.75 33C0.75 50.8112 15.1888 65.25 33 65.25C50.8112 65.25 65.25 50.8112 65.25 33C65.25 15.1888 50.8112 0.75 33 0.75C15.1888 0.75 0.75 15.1888 0.75 33Z"
-                    fill="#FF0000"
-                    fillOpacity="0.8"
+                    d="M36.3335 33H29.6668"
                     stroke="white"
-                    strokeWidth="0.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
-                      fill="white"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M36.3335 33H29.6668"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M33 29.6665V36.3332"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <div className="p-point-five">
-              <svg
-                className="before"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
                   <path
-                    id="Vector"
-                    d="M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14Z"
-                    fill="#FF0000"
-                    fillOpacity="0.4"
-                  />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M5.66683 14.0001C5.66683 18.6025 9.39779 22.3334 14.0002 22.3334C18.6025 22.3334 22.3335 18.6025 22.3335 14.0001C22.3335 9.39771 18.6025 5.66675 14.0002 5.66675C9.39779 5.66675 5.66683 9.39771 5.66683 14.0001Z"
-                      fill="#FF0000"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M17.3335 14L10.6668 14"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M14 10.6667L14 17.3334"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <svg
-                className="after"
-                width="66"
-                height="66"
-                viewBox="0 0 66 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Blink on hover">
-                  <path
-                    id="Vector"
-                    d="M0.75 33C0.75 50.8112 15.1888 65.25 33 65.25C50.8112 65.25 65.25 50.8112 65.25 33C65.25 15.1888 50.8112 0.75 33 0.75C15.1888 0.75 0.75 15.1888 0.75 33Z"
-                    fill="#FF0000"
-                    fillOpacity="0.8"
+                    d="M33 29.6665V36.3332"
                     stroke="white"
-                    strokeWidth="0.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <g id="plus-circle">
-                    <path
-                      id="Vector_2"
-                      d="M24.6668 32.9998C24.6668 37.6022 28.3978 41.3332 33.0002 41.3332C37.6025 41.3332 41.3335 37.6022 41.3335 32.9998C41.3335 28.3975 37.6025 24.6665 33.0002 24.6665C28.3978 24.6665 24.6668 28.3975 24.6668 32.9998Z"
-                      fill="white"
-                    />
-                    <path
-                      id="Vector_3"
-                      d="M36.3335 33H29.6668"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      id="Vector_4"
-                      d="M33 29.6665V36.3332"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </g>
-              </svg>
+                </svg>
+              </div>
+              <div className="p-point-text">
+                <div className="p-point-img-border">
+                  <img src={goKartImg}></img>
+                </div>
+                <div className="p-point-text-heading">
+                  <sub>Wheel</sub>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eget in urna
+                    adipiscing
+                  </p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="131"
+                  height="95"
+                  viewBox="0 0 131 95"
+                  fill="none"
+                >
+                  <path
+                    d="M1.00053 0L1 94L131 94"
+                    stroke="url(#paint0_linear_650_1701)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_650_1701"
+                      x1="66"
+                      y1="0"
+                      x2="66"
+                      y2="94"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#142D38" />
+                      <stop offset="1" stopColor="#387F9E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
             </div>
-            <img src={Go_kart_Top_Down} alt="" />
+            <div className="p-point-four p-point"></div>
+            <div className="p-point-five p-point"></div>
+            <img className="specificationImg" src={Go_kart_Top_Down} alt="" />
           </div>
         </div>
       </div>

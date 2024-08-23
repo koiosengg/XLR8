@@ -760,7 +760,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 22px;
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .s-testimonies-left,
@@ -770,11 +770,11 @@ textarea {
   visibility: hidden;
 }
 
-.s-testimonies-container:hover .s-testimonies-left{
+.s-testimonies-container:hover .s-testimonies-left {
   visibility: visible;
 }
 
-.s-testimonies-container:hover .s-testimonies-right{
+.s-testimonies-container:hover .s-testimonies-right {
   visibility: visible;
 }
 
@@ -860,7 +860,6 @@ textarea {
 .s-testimonies-details.empty {
   visibility: hidden;
 }
-
 
 .s-testimonies-indicator {
   width: 100%;
@@ -1615,7 +1614,6 @@ textarea {
 
 .p-three-sixty-main {
   display: flex;
-  height: 1018px;
   padding: 120px 160px 80px 160px;
   justify-content: flex-end;
   align-items: center;
@@ -1625,6 +1623,7 @@ textarea {
 }
 
 .p-buggy-container {
+  width: 100%;
   display: flex;
   padding-left: 35px;
   justify-content: flex-end;
@@ -1643,18 +1642,16 @@ textarea {
 
 .p-label-cover-div {
   display: flex;
-  padding-right: 12px;
   flex-direction: column;
   align-items: flex-start;
-  gap: -52px;
   align-self: stretch;
+  gap: 54px;
 }
 
 .p-gap-div {
   display: flex;
   padding-bottom: 8px;
   align-items: flex-start;
-  gap: -431px;
   align-self: stretch;
 }
 
@@ -1679,13 +1676,78 @@ textarea {
 
 .p-buggy-second-div {
   display: flex;
-  width: 995px;
-  height: 701px;
+  width: 100%;
+  height: 500px;
+  margin-left: 80px;
   padding: 43px 28px;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
   border: 2px dashed #387f9e;
+}
+
+.s-model-select-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.s-model-select-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.s-model-controls {
+  padding-top: 0px;
+  height: 60%;
+  cursor: pointer;
+}
+
+.s-model-set-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.s-model-set {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.s-model-set img {
+  width: 100px;
+  height: 74.054px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid;
+  overflow: hidden;
+}
+
+.s-model-set p {
+  color: #fff;
+  font-family: "Merriweather Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.s-active-model img {
+  border-radius: 8px;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(180deg, #142d38, #387f9e);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .p-gokart-main {
@@ -1732,44 +1794,173 @@ textarea {
   padding: 0px 160px;
 }
 
-.p-gokart-img-cover img {
-  z-index: 1;
+.p-gokart-img-cover {
+  position: relative;
+}
+.specificationImg {
+  transition: transform 0.3s ease-in-out;
 }
 
-.p-point-one,
-.p-point-two,
-.p-point-three,
-.p-point-four,
-.p-point-five {
+.p-point {
+  z-index: 10;
+}
+.p-point {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.p-point:hover .before {
+  display: none;
+}
+.p-point:hover .after {
+  display: block;
+}
+
+.p-point-svg .after {
+  display: none;
+}
+
+.p-point-text {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.p-point-img-border {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: double 2px transparent;
+  background-image: linear-gradient(#111, #111),
+    linear-gradient(180deg, #142d38, #387f9e);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.p-point-img-border img {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-point-text-heading {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.p-point-text-heading sub {
+  color: #fff;
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.p-point-text-heading p {
+  color: var(--text-cod-gray-200, #d1d1d1);
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.p-point-text svg {
+  width: 100%;
+  padding-left: 100px;
+}
+
+.p-point:hover .p-point-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-point {
   width: 28px;
   height: 28px;
   position: absolute;
-  /* z-index: 999; */
+  cursor: pointer;
 }
 
 .p-point-one {
-  padding: 517px 0 0 75px;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(calc(-50% - 148px));
+}
+.p-point-one:hover {
+  bottom: 160px;
+  left: 50%;
+  transform: translateX(calc(-50% - 168px));
+}
+.p-point-one .p-point-text {
+  position: absolute;
+  bottom: -6px;
+  right: 30px;
 }
 
-.p-point-one.after:hover {
-  display: none;
+.p-point-one:hover ~ .specificationImg {
+  transform: scale(1.5) translateX(50px) translateY(-60px);
 }
+
+
 
 .p-point-two {
-  padding: 533px 0 0 235px;
+  top: 36px;
+  left: 50%;
+  transform: translateX(calc(-50% + 100px));
 }
+.p-point-two:hover {
+  top: 20px;
+  left: 50%;
+  transform: translateX(calc(-50% + 80px));
+}
+.p-point-two .p-point-text {
+  position: absolute;
+  bottom: -4px;
+  left: 60px;
+}
+
+.p-point-two:hover ~ .specificationImg {
+  transform: scale(1.5) translateX(-40px) translateY(100px);
+}
+
 
 .p-point-three {
-  padding: 401px 0 0 268px;
+  top: 258px;
+  left: 50%;
+  transform: translateX(calc(-50% + 5px));
+}
+.p-point-three:hover {
+  top: 238px;
+  left: 50%;
+  transform: translateX(calc(-50% - 15px));
+}
+.p-point-three .p-point-text {
+  position: absolute;
+  bottom: -4px;
+  right: 20px;
 }
 
-.p-point-four {
-  padding: 232px 0 0 239px;
+.p-point-three:hover ~ .specificationImg {
+  transform: scale(1.5) translateX(0px) translateY(20px);
 }
 
-.p-point-five {
-  padding: 37px 0 0 315px;
-}
-.after {
-  display: none;
-}
+
+
+

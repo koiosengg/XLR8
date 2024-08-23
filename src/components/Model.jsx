@@ -7,22 +7,36 @@ import {
   OrbitControls,
 } from "@react-three/drei";
 
-function NewModel(props) {
-  const { scene } = useGLTF("/go_kart.glb");
+function NewModel({ modelPath, ...props }) {
+  const { scene } = useGLTF(modelPath);
   return <primitive object={scene} {...props} />;
 }
 
-function Model() {
+function Model({
+  modelPath,
+  height = "100svh",
+  cameraPosition = [5, 2, 5],
+  enableOrbitControls = false,
+}) {
   return (
     <Canvas
-      style={{ width: "100%", height: "80svh" }}
-      camera={{ position: [5, 2, 5], fov: 50 }}
+      style={{ width: "100%", height: height }}
+      camera={{ position: cameraPosition, fov: 50 }}
     >
-      <PresentationControls speed={2.5} rotation={[0, 0, 0]} polar={[0, 0]}>
+      <PresentationControls
+        speed={2.5}
+        rotation={[0, 0, 0]}
+        polar={[0, 0]}
+        zoom={false}
+        global={true}
+      >
         <Stage environment={"city"}>
-          <NewModel />
+          <NewModel modelPath={modelPath} />
         </Stage>
       </PresentationControls>
+      {enableOrbitControls && (
+        <OrbitControls enableZoom={false} enablePan={false} />
+      )}
     </Canvas>
   );
 }
