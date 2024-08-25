@@ -1798,7 +1798,9 @@ textarea {
   position: relative;
 }
 .specificationImg {
+  position: relative;
   transition: transform 0.3s ease-in-out;
+  background: #111;
 }
 
 .p-point {
@@ -1808,8 +1810,6 @@ textarea {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
-
-
 
 .p-point:hover .before {
   display: none;
@@ -1907,18 +1907,17 @@ textarea {
   bottom: 160px;
   left: 50%;
   transform: translateX(calc(-50% - 168px));
+  z-index: 15;
 }
 .p-point-one .p-point-text {
   position: absolute;
   bottom: -6px;
   right: 30px;
 }
-
 .p-point-one:hover ~ .specificationImg {
   transform: scale(1.5) translateX(50px) translateY(-60px);
+  z-index: 12;
 }
-
-
 
 .p-point-two {
   top: 36px;
@@ -1929,17 +1928,17 @@ textarea {
   top: 20px;
   left: 50%;
   transform: translateX(calc(-50% + 80px));
+  z-index: 15;
 }
 .p-point-two .p-point-text {
   position: absolute;
   bottom: -4px;
   left: 60px;
 }
-
 .p-point-two:hover ~ .specificationImg {
   transform: scale(1.5) translateX(-40px) translateY(100px);
+  z-index: 12;
 }
-
 
 .p-point-three {
   top: 258px;
@@ -1950,17 +1949,56 @@ textarea {
   top: 238px;
   left: 50%;
   transform: translateX(calc(-50% - 15px));
+  z-index: 15;
 }
 .p-point-three .p-point-text {
   position: absolute;
   bottom: -4px;
   right: 20px;
 }
-
 .p-point-three:hover ~ .specificationImg {
   transform: scale(1.5) translateX(0px) translateY(20px);
+  z-index: 12;
 }
 
+.p-point-four {
+  bottom: 128px;
+  left: 50%;
+  transform: translateX(calc(-50% + 5px));
+}
+.p-point-four:hover {
+  bottom: 128px;
+  left: 50%;
+  transform: translateX(calc(-50% - 10px));
+  z-index: 15;
+}
+.p-point-four .p-point-text {
+  position: absolute;
+  bottom: -4px;
+  right: 20px;
+}
+.p-point-four:hover ~ .specificationImg {
+  transform: scale(1.5) translateX(0px) translateY(-60px);
+  z-index: 12;
+}
 
-
-
+.p-point-five {
+  bottom: 258px;
+  left: 50%;
+  transform: translateX(calc(-50% + 35px));
+}
+.p-point-five:hover {
+  bottom: 258px;
+  left: 50%;
+  transform: translateX(calc(-50% + 15px));
+  z-index: 15;
+}
+.p-point-five .p-point-text {
+  position: absolute;
+  bottom: -4px;
+  left: 60px;
+}
+.p-point-five:hover ~ .specificationImg {
+  transform: scale(1.5) translateX(-20px) translateY(0px);
+  z-index: 12;
+}
