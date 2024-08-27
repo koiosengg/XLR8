@@ -10,16 +10,22 @@ const ThreeSixty = () => {
       name: "Product Name Blue",
       img: galleryImg1,
       modelPath: "/go_kart.glb",
+      modelPart1: "BUGS",
+      modelPart2: "bunny1",
     },
     {
       name: "Product Name Beige",
       img: galleryImg2,
       modelPath: "/go_kart.glb",
+      modelPart1: "BUGS",
+      modelPart2: "bunny2",
     },
     {
       name: "Product Name Yellow",
       img: galleryImg3,
       modelPath: "/go_kart.glb",
+      modelPart1: "BUGS",
+      modelPart2: "bunny3",
     },
   ];
 
@@ -54,6 +60,10 @@ const ThreeSixty = () => {
                   cameraPosition={[5, 2, 5]}
                   enableOrbitControls={false}
                 />
+                <div className="p-buggy-product-name">
+                  <p className="part1">{models[activeIndex].modelPart1}</p>
+                  <p className="part2">{models[activeIndex].modelPart2}</p>
+                </div>
               </div>
             </div>
             <div className="s-model-select-container">
