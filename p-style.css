@@ -1484,6 +1484,7 @@ textarea {
 }
 
 .p-advantage-container-cover {
+  width: 100%;
   display: flex;
   gap: 48px;
   flex-direction: column;
@@ -1608,6 +1609,10 @@ textarea {
   mix-blend-mode: screen;
 }
 
+.p-hero-background img {
+  display: none;
+}
+
 .p-hero-svg svg {
   fill: rgba(230, 227, 227, 0.212);
 }
@@ -1662,7 +1667,7 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top:50px;
+  top: 50px;
 }
 
 .p-buggy-text-container p {
@@ -1689,34 +1694,34 @@ textarea {
   position: relative;
 }
 
-.p-buggy-product-name .part1{
+.p-buggy-product-name .part1 {
   transform: rotate(-90deg);
-align-self: stretch;
-color: #F1F1F1;
-font-family: Kanit;
-font-size: 34.647px;
-font-style: italic;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -1.732px;
-text-transform: uppercase;
-position: absolute;
-bottom: -20px;
-left: -70px;
+  align-self: stretch;
+  color: #f1f1f1;
+  font-family: Kanit;
+  font-size: 34.647px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.732px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -20px;
+  left: -70px;
 }
 
-.p-buggy-product-name .part2{
-  color: #F1F1F1;
-font-family: Kanit;
-font-size: 38.95px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 1.169px;
-text-transform: uppercase;
-position: absolute;
-bottom: -50px;
-left: 0px;
+.p-buggy-product-name .part2 {
+  color: #f1f1f1;
+  font-family: Kanit;
+  font-size: 38.95px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.169px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
 }
 
 .s-model-select-container {
@@ -2034,4 +2039,405 @@ left: 0px;
 .p-point-five:hover ~ .specificationImg {
   transform: scale(2) translateX(-20px) translateY(-20px);
   z-index: 12;
+}
+
+@media screen and (max-width: 1200px) {
+  .notMobile {
+    display: none;
+  }
+
+  .p-hero {
+    height: auto;
+  }
+
+  .p-track-container {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    position: relative;
+  }
+
+  .p-track {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .p-track-text-div {
+    width: 100%;
+  }
+
+  .p-track-text-div h1 {
+    width: 100%;
+    color: #fff;
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+  }
+
+  .p-track-text-div p {
+    width: 100%;
+    color: var(--text-cod-gray-400, #888);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .p-hero img {
+    display: none;
+  }
+
+  .p-hero-background {
+    width: 100%;
+    padding: 0;
+    padding-top: 100px;
+    display: block;
+  }
+
+  .p-hero-background svg {
+    display: none;
+  }
+
+  .p-hero-background img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    z-index: 10;
+    padding: 0px 24px;
+  }
+
+  .p-advantages-main {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .p-advantages-label {
+    color: #fff;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+    padding-bottom: 8px;
+  }
+
+  .p-adv-text-div {
+    gap: 16px;
+  }
+
+  .p-adv-text-div h1 {
+    width: 100%;
+    color: var(--default-white, #fff);
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .p-adv-text-div p {
+    width: 100%;
+    color: var(--text-cod-gray-400, #888);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .p-electrify-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .p-icon-cover {
+    width: 48px;
+    height: 48px;
+  }
+
+  .p-icon-animate {
+    width: 100%;
+    height: 100%;
+  }
+
+  .p-text-card h1 {
+    color: var(--text-cod-gray-50, #f6f6f6);
+    font-family: "Merriweather Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+  }
+
+  .p-text-card p {
+    color: var(--text-cod-gray-300, #b0b0b0);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .p-products {
+    width: 100%;
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .p-product-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .p-product-label {
+    color: #fff;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    padding-bottom: 8px;
+  }
+
+  .p-product-text-container h1 {
+    width: 100%;
+    color: #fff;
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+  }
+
+  .p-product-text-container span {
+    color: #fff;
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .p-product-subtext {
+    width: 100%;
+    color: var(--text-cod-gray-300, #b0b0b0);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .p-product-cards {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .p-card-container {
+    padding: 24px;
+  }
+
+  .p-img-cover {
+    height: 188px;
+  }
+
+  .p-gokart-label p {
+    color: var(--text-cod-gray-50, #f6f6f6);
+    font-family: Merriweather;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+  }
+
+  .footerLinkText svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .p-product-desc {
+    color: var(--text-cod-gray-300, #b0b0b0);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+  }
+
+  .p-vertical-card-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .p-img-cover-vertical {
+    height: 188px;
+  }
+
+  .p-testimonies {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .p-testimonies-label p {
+    color: #fff;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+
+  .p-testimonies-label h1 {
+    width: 100%;
+    color: var(--default-white, #fff);
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .s-testimonies-set-container {
+    height: auto;
+  }
+
+  .s-testimonies-left,
+  .s-testimonies-right {
+    visibility: visible;
+  }
+
+  .s-testimonies-set {
+    padding: 0;
+  }
+
+  .s-testimonies-details {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .s-testimonies-details .heading p {
+    color: var(--text-cod-gray-300, #b0b0b0);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+  }
+
+  .s-testimonies-details .heading sub {
+    color: var(--text-cod-gray-50, #f6f6f6);
+    font-family: "Merriweather Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 137.5% */
+  }
+
+  .s-testimonies-details img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .s-testimonies-indicator {
+    padding-left: 44px;
+  }
+
+  .p-FAQ {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  .p-faq-label {
+    color: #fff;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-bottom: 24px;
+  }
+
+  .p-faq-title {
+    width: 100%;
+    color: var(--default-white, #fff);
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 40px;
+  }
+
+  .p-faq-title span {
+    color: var(--default-white, #fff);
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+  }
+
+  .faq-container {
+    padding: 16px;
+  }
+
+  .faq-text {
+    gap: 16px;
+  }
+
+  .faq-text p {
+    color: var(--text-cod-gray-50, #f6f6f6);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+  }
+
+  .faq-text svg{
+    width: 20px;
+    height: 20px;
+  }
+
+  .p-faq-dropdown{
+    font-family: "Merriweather Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+  }
 }

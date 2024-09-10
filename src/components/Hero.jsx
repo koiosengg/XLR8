@@ -1,13 +1,14 @@
 import React from "react";
 import BackgroundImg from "../assets/ComponentsImg/Background.png";
 import GlowButton from "./GlowButton";
+import HomeBanner from "/HomeBanner.svg";
 
 const Hero = () => {
   return (
     <div className="p-hero">
       <img src={BackgroundImg} alt="" />
 
-      <div className="p-track-container"> 
+      <div className="p-track-container">
         <div className="p-track">
           <div className="p-track-text-div">
             <h1>
@@ -21,6 +22,7 @@ const Hero = () => {
           <GlowButton text="Race on" />
         </div>
         <div className="p-hero-background">
+          <img src={HomeBanner}></img>
           <div className="p-hero-svg">
             <svg
               xmlns="http://www.w3.org/2000/svg"

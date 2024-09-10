@@ -8,7 +8,7 @@ function ContactFooter() {
     <div className="footer">
       <div className="footer-text">
         <p>
-          Start Racing <span style={{ fontWeight: "700" }}>Today!</span>
+          Start Racing {" "} <span style={{ fontWeight: "700" }}>Today!</span>
         </p>
         <span className="footer-text-span">
           Lorem ipsum dolor sit amet consectetur. Auctor consectetur aliquam

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Testimony from "../assets/testimony_cover.png";
 
 const Testimonies = () => {
@@ -31,7 +31,30 @@ const Testimonies = () => {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = Math.ceil(testimonies.length / 2);
+  const [testimoniesPerSet, setTestimoniesPerSet] = useState(2);
+
+  useEffect(() => {
+    const updateTestimoniesPerSet = () => {
+      if (window.innerWidth < 1200) {
+        setTestimoniesPerSet(1);
+      } else {
+        setTestimoniesPerSet(2);
+      }
+    };
+
+    // Set initial value
+    updateTestimoniesPerSet();
+
+    // Add resize event listener
+    window.addEventListener("resize", updateTestimoniesPerSet);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", updateTestimoniesPerSet);
+    };
+  }, []);
+
+  const totalSlides = Math.ceil(testimonies.length / testimoniesPerSet);
 
   const handlePrevClick = () => {
     setCurrentSlide((prev) => Math.max(prev - 1, 0));
@@ -46,11 +69,9 @@ const Testimonies = () => {
       <div className="p-testimonies-label">
         <p>Testimonials</p>
         <h1>
-          <span>Stories</span> <br />
-          from the track
+          <span>Stories</span> <br className="notMobile" /> from the track
         </h1>
       </div>
-      <div className="s-testimonies-div"></div>
       <div className="s-testimonies-container">
         <div
           className="s-testimonies-left"
@@ -78,7 +99,10 @@ const Testimonies = () => {
             {Array.from({ length: totalSlides }, (_, index) => (
               <div className="s-testimonies-set" key={index}>
                 {testimonies
-                  .slice(index * 2, index * 2 + 2)
+                  .slice(
+                    index * testimoniesPerSet,
+                    index * testimoniesPerSet + testimoniesPerSet
+                  )
                   .map((testimony, i) => (
                     <React.Fragment key={i}>
                       <div className="s-testimonies-details">
@@ -88,12 +112,15 @@ const Testimonies = () => {
                         </div>
                         <img src={testimony.img} alt="Testimony" />
                       </div>
-                      {i === 0 && <div className="s-testimonies-line"></div>}
+                      {i === 0 && testimoniesPerSet === 2 && (
+                        <div className="s-testimonies-line"></div>
+                      )}
                     </React.Fragment>
                   ))}
-                {index === totalSlides - 1 && testimonies.length % 2 !== 0 && (
-                  <div className="s-testimonies-details"></div>
-                )}
+                {index === totalSlides - 1 &&
+                  testimonies.length % testimoniesPerSet !== 0 && (
+                    <div className="s-testimonies-details"></div>
+                  )}
               </div>
             ))}
           </div>

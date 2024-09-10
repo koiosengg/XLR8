@@ -34,7 +34,7 @@ const FAQ = () => {
       <div className="p-faq-label">
         <p style={{ paddingBottom: "8px" }}>FAQ’s</p>
       </div>
-      <div className="p-faq-title">Decode your queries</div>
+      <div className="p-faq-title"> <span>Decode</span> {" "} <br className="notMobile" /> your queries</div>
       {faqs.map((faq, index) => (
         <FAQItem key={index} faq={faq} />
       ))}

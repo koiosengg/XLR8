@@ -110,7 +110,7 @@ function MainFooter() {
             <span>
               Crafted by{" "}
               <a href="https://koiosengg.com/" target="_blank">
-                Koios Software Solutions
+                Koios Studio
               </a>
             </span>
           </div>

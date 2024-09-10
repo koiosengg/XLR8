@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import galleryImg1 from "../assets/Gallery/s-gallery-img-1.png";
 import galleryImg2 from "../assets/Gallery/s-gallery-img-2.png";
 import galleryImg3 from "../assets/Gallery/s-gallery-img-3.png";
@@ -11,39 +11,106 @@ import galleryImg9 from "../assets/Gallery/s-gallery-img-9.png";
 import galleryImg10 from "../assets/Gallery/s-gallery-img-10.png";
 import galleryImg11 from "../assets/Gallery/s-gallery-img-11.png";
 
-const galleryImages = [
-  galleryImg1,
-  galleryImg2,
-  galleryImg3,
-  galleryImg4,
-  galleryImg5,
-  galleryImg6,
-  galleryImg7,
-  galleryImg8,
-  galleryImg9,
-  galleryImg10,
-  galleryImg11,
+// Array of image objects with source and alt text
+const galleryItems = [
+  {
+    src: galleryImg1,
+    alt: "XLR8 Experience - Image 1: Thrilling karting on the track.",
+  },
+  {
+    src: galleryImg2,
+    alt: "XLR8 Experience - Image 2: High-speed action at the finish line.",
+  },
+  {
+    src: galleryImg3,
+    alt: "XLR8 Experience - Image 3: Racer taking a sharp turn.",
+  },
+  {
+    src: galleryImg4,
+    alt: "XLR8 Experience - Image 4: Side view of a kart in action.",
+  },
+  {
+    src: galleryImg5,
+    alt: "XLR8 Experience - Image 5: Kart racers gearing up for the race.",
+  },
+  {
+    src: galleryImg6,
+    alt: "XLR8 Experience - Image 6: Aerial view of the karting track.",
+  },
+  {
+    src: galleryImg7,
+    alt: "XLR8 Experience - Image 7: Close-up of a racer in full gear.",
+  },
+  {
+    src: galleryImg8,
+    alt: "XLR8 Experience - Image 8: Spectacular drift on the circuit.",
+  },
+  {
+    src: galleryImg9,
+    alt: "XLR8 Experience - Image 9: Racers battling for the lead position.",
+  },
+  {
+    src: galleryImg10,
+    alt: "XLR8 Experience - Image 10: Kart speeding down the straight.",
+  },
+  {
+    src: galleryImg11,
+    alt: "XLR8 Experience - Image 11: Celebratory shot of the winning moment.",
+  },
 ];
 
 function Gallery() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
   const optionContainerRef = useRef(null);
+  const imageRefs = useRef([]);
 
+  // Update isMobile state based on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1200);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Calculate the cumulative width of images up to the current index
+  const calculateScrollWidth = (index) => {
+    let totalWidth = 0;
+    for (let i = 0; i <= index; i++) {
+      totalWidth += imageRefs.current[i]?.offsetWidth || 0;
+    }
+    return totalWidth;
+  };
+
+  // Scroll up based on image width
   const handleUpClick = () => {
     if (activeIndex > 0) {
-      setActiveIndex(activeIndex - 1);
-      optionContainerRef.current.scrollBy({
-        top: -74.054,
+      const previousIndex = activeIndex - 1;
+      setActiveIndex(previousIndex);
+      const scrollAmount = calculateScrollWidth(previousIndex);
+      optionContainerRef.current.scrollTo({
+        left: isMobile
+          ? scrollAmount - (imageRefs.current[previousIndex]?.offsetWidth || 0)
+          : 0,
+        top: isMobile ? 0 : -74.054,
         behavior: "smooth",
       });
     }
   };
 
+  // Scroll down based on image width
   const handleDownClick = () => {
-    if (activeIndex < galleryImages.length - 1) {
-      setActiveIndex(activeIndex + 1);
-      optionContainerRef.current.scrollBy({
-        top: 74.054,
+    if (activeIndex < galleryItems.length - 1) {
+      const nextIndex = activeIndex + 1;
+      setActiveIndex(nextIndex);
+      const scrollAmount = calculateScrollWidth(nextIndex);
+      optionContainerRef.current.scrollTo({
+        left: isMobile ? scrollAmount : 0,
+        top: isMobile ? 0 : 74.054,
         behavior: "smooth",
       });
     }
@@ -57,14 +124,17 @@ function Gallery() {
           Our Gallery
           <br /> <span>of karting experience</span>
         </p>
-        <div className="s-heading-sub-text" style={{ width: "418px" }}>
+        <div className="s-heading-sub-text">
           Lorem ipsum dolor sit amet consectetur. Sed imperdiet ifelis quis
           ultrices lacinia proin pel
         </div>
       </div>
       <div className="s-galler-container">
         <div className="s-gallery-img-container">
-          <img src={galleryImages[activeIndex]} alt="Gallery" />
+          <img
+            src={galleryItems[activeIndex].src}
+            alt={galleryItems[activeIndex].alt}
+          />
         </div>
         <div className="s-gallery-option-container">
           <svg
@@ -84,15 +154,17 @@ function Gallery() {
           <div
             className="s-gallery-option-img-container"
             ref={optionContainerRef}
+            style={{ flexDirection: isMobile ? "row" : "column" }}
           >
-            {galleryImages.map((image, index) => (
+            {galleryItems.map((item, index) => (
               <img
                 key={index}
-                src={image}
+                ref={(el) => (imageRefs.current[index] = el)}
+                src={item.src}
                 className={
                   index === activeIndex ? "" : "s-gallery-not-active-img"
                 }
-                alt={`Gallery thumbnail ${index + 1}`}
+                alt={item.alt}
               />
             ))}
           </div>
@@ -108,7 +180,7 @@ function Gallery() {
             <path
               d="M21.01 9.2528C21.5 9.83503 21.5 10.7737 21.01 11.3559L12.7 21.23C12.31 21.6934 11.68 21.6934 11.29 21.23L2.98005 11.3559C2.49005 10.7737 2.49005 9.83502 2.98005 9.2528C3.47005 8.67058 4.26005 8.67058 4.75005 9.2528L12 17.8555L19.25 9.24092C19.73 8.67058 20.53 8.67058 21.01 9.2528Z"
               fill={
-                activeIndex === galleryImages.length - 1 ? "#5D5D5D" : "#FFFFFF"
+                activeIndex === galleryItems.length - 1 ? "#5D5D5D" : "#FFFFFF"
               }
             />
           </svg>

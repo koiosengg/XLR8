@@ -10,7 +10,7 @@ const ProductBenefits = () => {
           <p>
             Change <span>the game with instant swap</span>
           </p>
-          <div className="s-heading-sub-text" style={{ width: "418px" }}>
+          <div className="s-heading-sub-text">
             Lorem ipsum dolor sit amet consectetur. Magna fermentum diam erat
             nisi et viverra cras nascetur. Ornare congue massa metus enim orci
             molestie viverra elit pellentesque. Mi condimentum ligula eu
