@@ -8,7 +8,7 @@ import MainFooter from "./MainFooter";
 import ProductBenefit from "./ProductBenefit";
 import ThreeSixty from "./ThreeSixty";
 import Go_kart_Top_Down from "../assets/Go-kart-Top-Down.png";
-import Model from "./Model";
+import GokartBanner from "/GokartBanner.png";
 import goKartImg from "../assets/gokart_blue.jpeg";
 
 const productVarientsData = [
@@ -36,19 +36,19 @@ function Gokart() {
 
   const leftOpacity = offset === 0 ? 0.3 : 1;
   const rightOpacity = offset === productVarientsData.length - 3 ? 0.3 : 1;
-  
 
   return (
     <div className="productContainer">
       <div className="productBanner">
-        <img src={BackgroundImg} alt="Background" />
+        <img src={BackgroundImg} alt="Background" className="notMobile" />
+        <img src={GokartBanner} className="mobile"></img>
       </div>
       <div className="productDescription">
         <div className="s-heading">
           <p>
             Product <span>description</span>
           </p>
-          <div className="s-heading-sub-text" style={{ width: "812px" }}>
+          <div className="s-heading-sub-text">
             Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
             quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
             hynm Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
@@ -59,14 +59,14 @@ function Gokart() {
           </div>
         </div>
         <div className="productDescriptionContainer">
-          <div className="productDescriptionSet">
+          <div className="productDescriptionSet notMobile">
             <span>Max Power</span>
             <p>
               1000<sub>units</sub>
             </p>
           </div>
           <div
-            className="productDescriptionSet"
+            className="productDescriptionSet notMobile"
             style={{ borderLeft: "1px solid #FFF" }}
           >
             <span>Max Power</span>
@@ -75,7 +75,7 @@ function Gokart() {
             </p>
           </div>
           <div
-            className="productDescriptionSet"
+            className="productDescriptionSet notMobile"
             style={{ borderLeft: "1px solid #FFF" }}
           >
             <span>Max Power</span>
@@ -84,13 +84,45 @@ function Gokart() {
             </p>
           </div>
           <div
-            className="productDescriptionSet"
+            className="productDescriptionSet notMobile"
             style={{ borderLeft: "1px solid #FFF" }}
           >
             <span>Max Power</span>
             <p>
               1000<sub>units</sub>
             </p>
+          </div>
+          <div className="mobile mobileProductDesc">
+            <div className="set">
+              <div className="productDescriptionSet">
+                <span>Max Power</span>
+                <p>
+                  1000<sub>units</sub>
+                </p>
+              </div>
+              <div className="productDescriptionLine"></div>
+              <div className="productDescriptionSet">
+                <span>Max Power</span>
+                <p>
+                  1000<sub>units</sub>
+                </p>
+              </div>
+            </div>
+            <div className="set">
+              <div className="productDescriptionSet">
+                <span>Max Power</span>
+                <p>
+                  1000<sub>units</sub>
+                </p>
+              </div>
+              <div className="productDescriptionLine"></div>
+              <div className="productDescriptionSet">
+                <span>Max Power</span>
+                <p>
+                  1000<sub>units</sub>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -98,15 +130,7 @@ function Gokart() {
       <ProductBenefit />
       <div className="productPrecision">
         <div className="productPrecisionContainer">
-          <div
-            style={{
-              padding: "80px 40px 40px 40px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "64px",
-            }}
-          >
+          <div className="productPrecisionDiv">
             <div className="s-heading">
               <p>Precision Parts for Peak Performance</p>
               <div
@@ -668,7 +692,7 @@ function Gokart() {
             <p>
               Specs <span>that steer excellence</span>
             </p>
-            <div className="s-heading-sub-text" style={{ width: "800px" }}>
+            <div className="s-heading-sub-text">
               Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
               felis quis ultrices lacinia proin pellentesque. Vivamus est ispre
               oilfg hynm Lorem ipsum dolor sit amet consectetur. Sed imperdiet
@@ -814,7 +838,7 @@ function Gokart() {
             <p>
               Explore <span>every options</span>
             </p>
-            <div className="s-heading-sub-text" style={{ width: "800px" }}>
+            <div className="s-heading-sub-text">
               Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam
               felis quis ultrices lacinia proin pellentesque. Vivamus est ispre
               oilfg hynm Lorem ipsum dolor sit amet consectetur. Sed imperdiet
@@ -845,7 +869,7 @@ function Gokart() {
               mask="url(#path-1-inside-1_293_1527)"
             />
           </svg>
-          <div className="productVarientsDiv">
+          <div className="productVarientsDiv notMobile">
             {productVarientsData
               .slice(offset, offset + 3)
               .map((variant, index) => (
@@ -863,6 +887,20 @@ function Gokart() {
                 </div>
               ))}
           </div>
+          <div className="productVarientsDiv mobile">
+            {productVarientsData.map((variant, index) => (
+              <div className="productVarientsSet" key={index}>
+                <div className="productVarientsSetImg">
+                  <img src={variant.imgSrc} alt={`Product Variant ${index}`} />
+                </div>
+                <div className="productVarientsSetText">
+                  <p>{variant.title}</p>
+                  <span>{variant.details}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
           <svg
             className="productVarientsLeft"
             xmlns="http://www.w3.org/2000/svg"

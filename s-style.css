@@ -451,6 +451,10 @@
   gap: 80px;
 }
 
+.productDescription .s-heading-sub-text {
+  width: 812px;
+}
+
 .productDescriptionContainer {
   display: flex;
   align-items: flex-start;
@@ -590,6 +594,14 @@
   background-clip: content-box, border-box;
 }
 
+.productPrecisionDiv {
+  padding: 80px 40px 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
 .productPrecisionContainer .s-heading {
   width: 450.5px;
 }
@@ -612,6 +624,10 @@
   align-items: flex-start;
   gap: 48px;
   align-self: stretch;
+}
+
+.productSpecification .s-heading-sub-text {
+  width: 800px;
 }
 
 .productSpecificationHeading {
@@ -739,6 +755,10 @@
   align-items: flex-start;
   gap: 48px;
   align-self: stretch;
+}
+
+.productVarients .s-heading-sub-text {
+  width: 800px;
 }
 
 .productVarientsContainer {
@@ -1603,6 +1623,7 @@
   }
 
   .s-heading {
+    width: 100%;
     color: var(--default-white, #fff);
     font-family: Merriweather;
     font-size: 24px;
@@ -1680,6 +1701,268 @@
     gap: 16px;
   }
 
+  /* Main product Page */
+
+  .mainProducts {
+    display: flex;
+    padding: 48px 20px;
+    padding-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .mainProductsContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .mainProductsSet {
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .mainProductsImg {
+    height: 222px;
+  }
+
+  .mainProductsImg img {
+    height: 222px;
+  }
+
+  /* Product */
+
+  .productContainer {
+    gap: 0;
+  }
+
+  .productBanner {
+    padding-top: 72px;
+    height: auto;
+  }
+
+  .productBanner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .productDescription {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .productDescription .s-heading-sub-text {
+    width: 100%;
+  }
+
+  .productDescriptionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .productDescriptionSet {
+    padding: 0;
+    width: 100%;
+  }
+
+  .productDescriptionSet span {
+    color: var(--text-cod-gray-300, #b0b0b0);
+    text-align: center;
+    font-family: "Merriweather Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .productDescriptionSet p {
+    color: var(--White, #fffffb);
+    text-align: center;
+    font-family: "Merriweather Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+
+  .productDescriptionSet sub {
+    color: var(--White, #fffffb);
+    text-align: center;
+    font-family: "Merriweather Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  .productDescriptionLine {
+    width: 1px;
+    height: 64px;
+    border-left: 1px solid #fff;
+  }
+
+  .productContainer .mobileProductDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .mobileProductDesc .set {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .productPrecision {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .productPrecisionContainer {
+    flex-direction: column;
+  }
+
+  .productPrecisionDiv {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 40px 0px;
+  }
+
+  .productPrecisionContainer .s-heading {
+    padding: 0px 20px;
+    width: 100%;
+    color: var(--text-cod-gray-50, #f6f6f6);
+
+    /* Merriweather - Display/XS - Header/Bold */
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+
+  .s-heading-sub-text {
+    color: var(--text-cod-gray-300, #b0b0b0);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .productPrecisionImg {
+    width: 100%;
+  }
+
+  .productSpecification {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .productSpecification .s-heading-sub-text {
+    width: 100%;
+  }
+
+  .productSpecificationContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productSpecificationSet {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .productSpecificationSet:hover {
+    width: 100%;
+    gap: 0;
+  }
+
+  .productSpecificationSet .productHeading {
+    width: 100%;
+    position: relative;
+    transform: none;
+    left: auto;
+    top: auto;
+    height: 70px;
+    border-top: 1px solid #387f9e;
+    padding-top: 20px;
+    padding-left: 16px;
+  }
+
+  .productSpecificationSet:hover .productHeading {
+    width: 100%;
+    position: relative;
+    transform: none;
+    left: auto;
+    top: auto;
+  }
+
+  .productSpecificationInfo {
+    margin: 0;
+    padding: 16px;
+    transition: all 0.3s;
+  }
+
+  .productSpecificationSet:last-child {
+    border-bottom: 1px solid #387f9e;
+  }
+
+  .productVarients {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .productVarients .s-heading-sub-text {
+    width: 100%;
+  }
+
+  .productVarientsContainer svg {
+    display: none;
+  }
+
+  .productVarientsContainer .mobile{
+    display: flex;
+  }
+
+  .productVarientsDiv {
+    overflow-x: scroll;
+  }
+  .productVarientsSet {
+    width: 80%;
+    flex-shrink: 0;
+  }
+
   /* Footer */
 
   .footer {
@@ -1717,6 +2000,10 @@
   }
 
   .footer-get-quote {
+    width: auto;
+  }
+
+  .footer .footer-get-quote {
     width: 100%;
   }
 

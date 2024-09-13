@@ -19,7 +19,7 @@ const Hero = () => {
               lacinia proin pel{" "}
             </p>
           </div>
-          <GlowButton text="Race on" />
+          <GlowButton text="Race on" toLink="/aboutus" />
         </div>
         <div className="p-hero-background">
           <img src={HomeBanner}></img>
