@@ -1,5 +1,6 @@
 import React from "react";
 import Car from "../assets/404car.png"
+import { Link } from "react-router-dom";
 
 function Error404() {
   return (
@@ -19,7 +20,7 @@ function Error404() {
           <span>You are off the track ! &nbsp; Let’s Find your route</span>
         </div>
       </div>
-      <div className="go-back-button">
+      <Link to="/" className="go-back-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -43,7 +44,7 @@ function Error404() {
           />
         </svg>
         <p>Go Back</p>
-      </div>
+      </Link>
     </div>
   );
 };

@@ -623,7 +623,7 @@ const AboutUs = () => {
         <div className="p-collection-gallery-main">
           <div className="p-collecting-label">Collection Gallery</div>
           <div className="p-gallery-grid">
-            <div className="p-gallery-left">
+            <div className="p-gallery-left notMobile">
               <div
                 className="p-img-container-div"
                 style={{ height: "233px", borderLeft: "1px solid #36A7BE" }}
@@ -637,7 +637,7 @@ const AboutUs = () => {
                 <img src={Steering_wheel} alt="Steering wheel" />
               </div>
             </div>
-            <div className="p-gallery-mid">
+            <div className="p-gallery-mid notMobile">
               <div
                 className="p-img-container-div"
                 style={{ height: "506px", borderTop: "1px solid #36A7BE" }}
@@ -651,13 +651,20 @@ const AboutUs = () => {
                 <img src={Speedometer} alt="Speedometer" />
               </div>
             </div>
-            <div className="p-gallery-right">
+            <div className="p-gallery-right notMobile">
               <div
                 className="p-img-container-div"
                 style={{ height: "100%", borderRight: "1px solid #36A7BE" }}
               >
                 <img src={Tricycle} alt="Tricycle" />
               </div>
+            </div>
+            <div className="mobile">
+              <img src={Dune_buggy} alt="Dune buggy" />
+              <img src={Steering_wheel} alt="Steering wheel" />
+              <img src={Gokart} alt="Gokart" />
+              <img src={Speedometer} alt="Speedometer" />
+              <img src={Tricycle} alt="Tricycle" />
             </div>
           </div>
         </div>

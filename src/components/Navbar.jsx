@@ -69,9 +69,9 @@ function Navbar() {
               <path
                 d="M2.99994 13L7.99994 8L12.9999 13M12.9999 3L7.99899 8L2.99994 3"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>

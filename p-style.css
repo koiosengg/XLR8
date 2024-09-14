@@ -284,6 +284,15 @@ form {
   gap: 8px;
 }
 
+form span {
+  color: #ed1c24;
+  font-family: "Merriweather Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .firstName input,
 .lastName input {
   display: flex;
@@ -2854,7 +2863,23 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    align-self: stretch;
+    height: auto;
+  }
+
+  .p-gallery-grid .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .p-gallery-grid .mobile img {
+    width: 100%;
+    height: 196px;
+    object-fit: cover;
+    border-left: 1px solid #36a7be;
   }
 
   .p-collecting-label {
@@ -2867,7 +2892,6 @@ textarea {
     line-height: 140%;
     letter-spacing: -0.48px;
   }
-  /* Gallery pending */
 
   /* Product */
 
@@ -2984,5 +3008,86 @@ textarea {
 
   .p-gokart-div {
     scale: 80%;
+  }
+
+  /* contact */
+
+  .p-contact-main {
+    width: 100%;
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 120px;
+  }
+
+  .p-get-in-touch {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .p-get-in-touch-text h1 {
+    color: #fff;
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+
+  .p-get-in-touch-text p {
+    color: var(--text-cod-gray-300, #b0b0b0);
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+
+  .p-form {
+    width: 100%;
+  }
+  .name-div {
+    flex-direction: column;
+  }
+
+  .p-checkbox-top,
+  .p-checkbox-btm {
+    flex-direction: column;
+  }
+  .p-checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  }
+
+  /* 404 Page */
+
+  .Error404 {
+    padding: 48px 20px;
+    padding-top: 120px;
+    height: 100svh;
+  }
+
+  .Error404-container {
+    width: 100%;
+  }
+
+  .Error-car img {
+    width: 250px;
+  }
+
+  .loader {
+    width: 32px;
+    padding: 5px;
+  }
+
+  .loader1 {
+    bottom: 11px;
+    left: calc(50% - 72px);
+  }
+    .loader2 {
+    bottom: 11px;
+    left: calc(50% + 24px);
   }
 }

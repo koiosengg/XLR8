@@ -9,7 +9,7 @@ import BatteryAndElectricals from "./BatteryAndElectricals";
 import Seat from "./Seat";
 import Steering from "./Steering";
 import Suspension from "./Suspension";
-import MainFooter from "./MainFooter"
+import MainFooter from "./MainFooter";
 
 function Component() {
   const [activeComponent, setActiveComponent] = useState("AxleAssembly");
@@ -30,6 +30,10 @@ function Component() {
     setActiveComponent(componentName);
   };
 
+  const handleDropdownChange = (event) => {
+    setActiveComponent(event.target.value);
+  };
+
   return (
     <>
       <div className="componentsBanner">
@@ -45,8 +49,26 @@ function Component() {
             </p>
           </div>
         </div>
+
+        {/* Dropdown for component selection */}
+        <div className="dropdownComponent">
+          <label htmlFor="dropdown">Select a Category</label>
+          <select
+            id="dropdown"
+            name="components"
+            value={activeComponent}
+            onChange={handleDropdownChange}
+          >
+            {Object.keys(components).map((key) => (
+              <option key={key} value={key}>
+                {key.replace(/([A-Z])/g, " $1").trim()}
+              </option>
+            ))}
+          </select>
+        </div>
+
         <div className="componentsMainContainer">
-          <div className="componentsSelectorContainer">
+          <div className="componentsSelectorContainer notMobile">
             {Object.keys(components).map((key) => (
               <div
                 key={key}
@@ -60,6 +82,8 @@ function Component() {
               </div>
             ))}
           </div>
+
+          {/* Component Display */}
           <div className="componentDisplayContainer">
             {components[activeComponent]}
           </div>

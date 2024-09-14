@@ -133,24 +133,62 @@ function Contact() {
             <div className="p-form-top">
               <div className="name-div">
                 <div className="firstName">
-                  <p>First Name</p>
-                  <input type="text" />
+                  <p>
+                    First Name <span>*</span>
+                  </p>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First name"
+                    required
+                    maxLength="50"
+                  />
                 </div>
                 <div className="lastName">
-                  <p>Last Name</p>
-                  <input type="text" />
+                  <p>
+                    Last Name <span>*</span>
+                  </p>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                    maxLength="50"
+                  />
                 </div>
               </div>
+
               <div className="name-div">
                 <div className="firstName">
-                  <p>Phone</p>
-                  <input type="text" />
+                  <p>
+                    Phone <span>*</span>
+                  </p>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 99999 99999"
+                    required
+                    pattern="[0-9]{10}" /* A pattern for 10-digit phone numbers */
+                    maxLength="10"
+                  />
                 </div>
                 <div className="lastName">
-                  <p>Email</p>
-                  <input type="text" />
+                  <p>
+                    Email <span>*</span>
+                  </p>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="xlr8@mail.com"
+                    required
+                  />
                 </div>
               </div>
+
               <div className="p-enquire-about">
                 <p className="p-enquire-title">Enquire About</p>
                 <div className="p-checkbox-grid">
